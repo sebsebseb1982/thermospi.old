@@ -1,8 +1,8 @@
 #!/bin/bash
+source ./setVars.sh
 
 # Pour tous les capteurs de temperature
-mysql -u seb -pseb -e "SELECT * FROM sensors" temperatures | tail -n 3 | while read id label path; do
-   echo "Capteur: "$id" / "$label" / "$path
+mysql -u $DB_USER -p$DB_PASSWORD -e "SELECT * FROM sensors" temperatures | tail -n 3 | while read id label path; do
 
    # Lecture complete de la sortie du capteur
    FULL_TEMP_STRING=`cat $path`
@@ -20,7 +20,9 @@ mysql -u seb -pseb -e "SELECT * FROM sensors" temperatures | tail -n 3 | while r
    # Transformation en float
    TEMP_VALUE=`bc <<< 'scale=3; '$TEMP_STRING' / 1000'`
 
+   echo "Capteur["$id"|"$label"|"$path"] : "$TEMP_VALUE"°C"
+
    # Insertion de la valeur en base
-   mysql -u seb -pseb -e 'INSERT INTO records (date,value,sensorId) VALUES (NOW(),'$TEMP_VALUE','$id')' temperatures
+   mysql -u $DB_USER -p$DB_PASSWORD -e 'INSERT INTO records (date,value,sensorId) VALUES (NOW(),'$TEMP_VALUE','$id')' temperatures
 
 done
