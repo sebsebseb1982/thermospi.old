@@ -1,12 +1,29 @@
 #!/bin/bash
+source ~/thermospi/setVars.sh
 
 # On recupere la consigne de chauffage
 CONSIGNE_TEMPERATURE=$(mysql -u seb -pseb -se 'SELECT value FROM constants where name="consigne"' temperatures)
 echo "Consigne de temperature:"$CONSIGNE_TEMPERATURE
 
-# On recupere l'intervalle d'enregistrement de temperature
+# On recupere l intervalle d enregistrement de temperature
 INTERVALLE=$(mysql -u seb -pseb -se 'SELECT value FROM constants where name="intervalle"' temperatures)
 echo "Intervalle d'enregistremment de la temperature:"$INTERVALLE
+
+# On recupere la derniere consigne de niveau utilisateur
+
+   # Si mode AUTO
+
+      # On recupere la derniere consigne de niveau systeme
+
+      # Si mode AUTO
+
+         # On recupere la derniere consigne de niveau thermostat
+
+      # Si mode OFF
+
+   # Si mode OFF
+
+   # Si mode ON
 
 # On recupere l'etat courant du thermostat
 THERMOSTAT_STATE=$(mysql -u seb -pseb -se 'SELECT state FROM states ORDER BY date DESC LIMIT 1' temperatures)

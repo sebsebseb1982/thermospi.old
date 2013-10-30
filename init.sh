@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Init GPIO"
+
 # On charge les drivers pour les capteurs de temperature
 sudo modprobe w1-gpio
 sudo modprobe w1-therm
