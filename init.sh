@@ -1,4 +1,5 @@
 #!/bin/bash
+source ~/thermospi/setVars.sh
 
 echo "Init GPIO"
 
@@ -17,4 +18,4 @@ gpio write 2 0
 gpio write 3 0
 
 # On sauvegarde la consigne 0 en base
-mysql -u seb -pseb -e 'INSERT INTO states (date,state) VALUES (NOW(), FALSE)' temperatures
+mysql -u $DB_USER -p$DB_PASSWORD -e 'INSERT INTO status (date,status,priority) VALUES (NOW(), 0, '$THERMOSTAT_LEVEL')' $DB_NAME
