@@ -35,17 +35,29 @@ then
       TEMPERATURE_AMBIANTE=$(mysql -u $DB_USER -p$DB_PASSWORD -se 'SELECT AVG(value) FROM records WHERE date > (NOW() - INTERVAL '$TEMPERATURE_RECORD_FREQUENCY' minute) AND (sensorId = 2 OR sensorId = 3)' $DB_NAME)
       echo "Temperature moyenne des "$TEMPERATURE_RECORD_FREQUENCY" dernieres minutes -> "$TEMPERATURE_AMBIANTE"°C"
 
-      # Si le thermostat est actuellement coupe et que la temperature moyenne est inferieure a la consigne moins l'hysteresis
-      if [ $ETAT_COURANT_THERMOSTAT = 0 ] && [ `bc <<< $TEMPERATURE_AMBIANTE' < '$CONSIGNE_TEMPERATURE' - '$HYSTERESIS` = 1 ]
+      # Si la temperature moyenne est inferieure a la consigne moins l'hysteresis
+      if [ `bc <<< $TEMPERATURE_AMBIANTE' < '$CONSIGNE_TEMPERATURE' - '$HYSTERESIS` = 1 ]
       then
+         # On force la sortie du thermostat sur ON
          updateThermostat 1
-         mysql -u $DB_USER -p$DB_PASSWORD -e 'INSERT INTO status (date,status,priority) VALUES (NOW(), 1, '$THERMOSTAT_LEVEL')' $DB_NAME
 
-      # Si le thermostat est actuellement allume et que la temperature moyenne est superieure a la consigne plus l'hysteresis
-      elif [ $ETAT_COURANT_THERMOSTAT = 1 ] && [ `bc <<< $TEMPERATURE_AMBIANTE' > '$CONSIGNE_TEMPERATURE' + '$HYSTERESIS` = 1 ]
+         # On met à jour l'etat du thermostat si necessaire
+         if [ $ETAT_COURANT_THERMOSTAT = 0 ]
+         then
+            mysql -u $DB_USER -p$DB_PASSWORD -e 'INSERT INTO status (date,status,priority) VALUES (NOW(), 1, '$THERMOSTAT_LEVEL')' $DB_NAME
+         fi
+
+      # Si le thermostat est actuellement ON et que la temperature moyenne est superieure a la consigne plus l'hysteresis
+      elif [ `bc <<< $TEMPERATURE_AMBIANTE' > '$CONSIGNE_TEMPERATURE' + '$HYSTERESIS` = 1 ]
       then
+         # On force la sortie du thermostat sur OFF
          updateThermostat 0
-         mysql -u $DB_USER -p$DB_PASSWORD -e 'INSERT INTO status (date,status,priority) VALUES (NOW(), 0, '$THERMOSTAT_LEVEL')' $DB_NAME
+
+         # On met à jour l'etat du thermostat si necessaire
+         if [ $ETAT_COURANT_THERMOSTAT = 1 ]
+         then
+            mysql -u $DB_USER -p$DB_PASSWORD -e 'INSERT INTO status (date,status,priority) VALUES (NOW(), 0, '$THERMOSTAT_LEVEL')' $DB_NAME
+         fi
       fi
 
    # Si maison vide
@@ -53,12 +65,12 @@ then
       updateThermostat 0
    fi
 
-# Si chauffage eteint
+# Si chauffage arrete
 elif [ "$DERNIERE_CONSIGNE_NIVEAU_UTILISATEUR" == 0 ]
 then
    updateThermostat 0
 
-# Si chauffage allume
+# Si chauffage demarre
 elif [ "$DERNIERE_CONSIGNE_NIVEAU_UTILISATEUR" == 1 ]
 then
    updateThermostat 1
