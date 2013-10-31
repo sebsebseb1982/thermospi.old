@@ -5,13 +5,20 @@ setVar() {
    eval "$1=$2"
 }
 
-echo "[START] Set vars"
-
+# Infos BDD
 setVar DB_USER seb
 setVar DB_PASSWORD seb
+setVar DB_NAME temperatures
+
+# Priorites
 setVar USER_LEVEL 3
 setVar SYSTEM_LEVEL 2
 setVar THERMOSTAT_LEVEL 1
+
+# N° GPIO relai chauffage
 setVar GPIO_THERMOSTAT 0
 
-echo "[STOP] Set vars"
+# Frequence d'enregistrement des temperatures
+setVar TEMPERATURE_RECORD_FREQUENCY 5
+
+setVar HYSTERESIS 1
