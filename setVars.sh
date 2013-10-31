@@ -1,11 +1,17 @@
 #!/bin/bash
-echo "Set DB_USER"
-DB_USER=seb
-echo "Set DB_PASSWORD"
-DB_PASSWORD=seb
-echo "Set USER_LEVEL"
-USER_LEVEL=3
-echo "Set SYSTEM_LEVEL"
-SYSTEM_LEVEL=2
-echo "Set THERMOSTAT_LEVEL"
-THERMOSTAT_LEVEL=1
+
+setVar() {
+   echo "Set "$1" -> "$2
+   eval "$1=$2"
+}
+
+echo "[START] Set vars"
+
+setVar DB_USER seb
+setVar DB_PASSWORD seb
+setVar USER_LEVEL 3
+setVar SYSTEM_LEVEL 2
+setVar THERMOSTAT_LEVEL 1
+setVar GPIO_THERMOSTAT 0
+
+echo "[STOP] Set vars"

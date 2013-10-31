@@ -53,7 +53,13 @@ CREATE TABLE status (
    PRIMARY KEY (id)
 );
 
-INSERT INTO temperatures.`status` (date, status, priority) VALUES (STR_TO_DATE( '17/07/2013 12:40:00', '%d/%m/%Y %H:%i:%s'), TRUE, 1);
+-- Par défaut le thermostat est en mode AUTO (status=null)
+INSERT INTO temperatures.`status` (date, status, priority) VALUES (NOW(), null, 3);
+-- Par défaut on considere que quelqu'un est présent dans la maison
+INSERT INTO temperatures.`status` (date, status, priority) VALUES (NOW(), TRUE, 2);
+-- Par défaut le chauffage est éteint
+INSERT INTO temperatures.`status` (date, status, priority) VALUES (NOW(), FALSE, 1);
+/*
 INSERT INTO temperatures.`status` (date, status, priority) VALUES (STR_TO_DATE( '17/07/2013 12:41:00', '%d/%m/%Y %H:%i:%s'), FALSE, 1);
 INSERT INTO temperatures.`status` (date, status, priority) VALUES (STR_TO_DATE( '17/07/2013 12:42:00', '%d/%m/%Y %H:%i:%s'), TRUE, 1);
 INSERT INTO temperatures.`status` (date, status, priority) VALUES (STR_TO_DATE( '17/07/2013 12:43:00', '%d/%m/%Y %H:%i:%s'), FALSE, 1);
@@ -62,5 +68,6 @@ INSERT INTO temperatures.`status` (date, status, priority) VALUES (STR_TO_DATE( 
 INSERT INTO temperatures.`status` (date, status, priority) VALUES (STR_TO_DATE( '17/07/2013 12:46:00', '%d/%m/%Y %H:%i:%s'), TRUE, 1);
 INSERT INTO temperatures.`status` (date, status, priority) VALUES (STR_TO_DATE( '17/07/2013 12:46:30', '%d/%m/%Y %H:%i:%s'), TRUE, 2);
 INSERT INTO temperatures.`status` (date, status, priority) VALUES (STR_TO_DATE( '17/07/2013 12:47:00', '%d/%m/%Y %H:%i:%s'), FALSE, 1);
+*/
 
 SET FOREIGN_KEY_CHECKS=1;
