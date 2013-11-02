@@ -21,4 +21,4 @@ setVar GPIO_THERMOSTAT 0
 # Frequence d'enregistrement des temperatures
 setVar TEMPERATURE_RECORD_FREQUENCY 5
 
-setVar HYSTERESIS 1
+setVar HYSTERESIS 0.5

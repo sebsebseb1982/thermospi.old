@@ -13,9 +13,9 @@ CREATE TABLE sensors (
    INDEX(id)
 );
 
-INSERT INTO sensors (label, path) VALUES ('Extérieur',       '/sys/bus/w1/devices/28-000004540849/w1_slave');
+INSERT INTO sensors (label, path) VALUES ('Extérieur',       '/sys/bus/w1/devices/28-000004549124/w1_slave');
 INSERT INTO sensors (label, path) VALUES ('Etage',           '/sys/bus/w1/devices/28-00000454650f/w1_slave');
-INSERT INTO sensors (label, path) VALUES ('Rez-de-chaussée', '/sys/bus/w1/devices/28-000004549124/w1_slave');
+INSERT INTO sensors (label, path) VALUES ('Rez-de-chaussée', '/sys/bus/w1/devices/28-000004540849/w1_slave');
 
 -- ===============================================
 -- Enregistrements de temperatures
@@ -40,6 +40,9 @@ CREATE TABLE setpoints (
    value DECIMAL(6,3),
    PRIMARY KEY (id)
 );
+
+-- Par defaut on met une consigne a 19°C
+INSERT INTO setpoints (date, value) VALUES (NOW(), 19);
 
 -- ===============================================
 -- Etat du thermostat
