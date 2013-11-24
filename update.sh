@@ -48,7 +48,7 @@ then
          fi
 
       # Si le thermostat est actuellement ON et que la temperature moyenne est superieure a la consigne plus l'hysteresis
-      elif [ `bc <<< $TEMPERATURE_AMBIANTE' > '$CONSIGNE_TEMPERATURE' + '$HYSTERESIS` = 1 ]
+      elif [ `bc <<< $TEMPERATURE_AMBIANTE' > '$CONSIGNE_TEMPERATURE` = 1 ]
       then
          # On force la sortie du thermostat sur OFF
          updateThermostat 0
