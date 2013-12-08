@@ -18,6 +18,10 @@ then
    if [ $PRESENCE != $DERNIERE_CONSIGNE_NIVEAU_SYSTEME ]
    then
       mysql -u $DB_USER -p$DB_PASSWORD -e 'INSERT INTO status (date,status,priority) VALUES (NOW(),'$PRESENCE','$SYSTEM_LEVEL')' $DB_NAME
+
+      sleep 1
+
+      ~/thermospi/update.sh
    fi
 
 # Sinon,
