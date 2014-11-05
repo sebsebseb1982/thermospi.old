@@ -1,5 +1,5 @@
 #!/bin/bash
-source ~/thermospi/setVars.sh
+source ~/thermospi/scripts/setVars.sh
 
 # On verifie si il y a qq'un dans la maison
 ~/toctoc/start.sh $1 $2

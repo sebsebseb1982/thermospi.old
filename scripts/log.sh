@@ -1,5 +1,5 @@
 #!/bin/bash
-source ~/thermospi/setVars.sh
+source ~/thermospi/scripts/setVars.sh
 
 # Pour tous les capteurs de temperature
 mysql -u $DB_USER -p$DB_PASSWORD -e "SELECT * FROM sensors" $DB_NAME | tail -n 3 | while read id label path; do

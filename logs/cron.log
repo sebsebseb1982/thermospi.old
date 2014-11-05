@@ -1,0 +1,12 @@
+Set DB_USER -> seb
+Set DB_PASSWORD -> seb
+Set DB_NAME -> temperatures
+Set USER_LEVEL -> 3
+Set SYSTEM_LEVEL -> 2
+Set THERMOSTAT_LEVEL -> 1
+Set GPIO_THERMOSTAT -> 0
+Set TEMPERATURE_RECORD_FREQUENCY -> 15
+Set HYSTERESIS -> 0.5
+Capteur[1|Extérieur|/sys/bus/w1/devices/28-000004549bbe/w1_slave] : 14.625°C
+Capteur[2|Etage|/sys/bus/w1/devices/28-00000454650f/w1_slave] : 18.750°C
+Capteur[3|Rez-de-chaussée|/sys/bus/w1/devices/28-000004540849/w1_slave] : 16.875°C

@@ -1,5 +1,5 @@
 #!/bin/bash
-source ~/thermospi/setVars.sh
+source ~/thermospi/scripts/setVars.sh
 
 updateThermostat() {
    gpio mode $GPIO_THERMOSTAT out
