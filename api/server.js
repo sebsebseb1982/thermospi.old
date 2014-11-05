@@ -51,8 +51,6 @@ router.use(function(req, res, next) {
 
 var curut = router.route('/temperatures/records');
 
-
-//show the CRUD interface | GET
 curut.get(function(req,res){
 
     req.getConnection(function(err,conn){
