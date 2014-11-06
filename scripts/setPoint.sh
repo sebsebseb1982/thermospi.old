@@ -7,4 +7,4 @@ echo "Consigne de chauffage : "$1"°C"
 
 sleep 1
 
-~/thermospi/update.sh
+~/thermospi/scripts/update.sh

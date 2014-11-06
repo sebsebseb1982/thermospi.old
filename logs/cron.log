@@ -7,6 +7,6 @@ Set THERMOSTAT_LEVEL -> 1
 Set GPIO_THERMOSTAT -> 0
 Set TEMPERATURE_RECORD_FREQUENCY -> 15
 Set HYSTERESIS -> 0.5
-Capteur[1|Extérieur|/sys/bus/w1/devices/28-000004549bbe/w1_slave] : 11.812°C
-Capteur[2|Etage|/sys/bus/w1/devices/28-00000454650f/w1_slave] : 18.625°C
-Capteur[3|Rez-de-chaussée|/sys/bus/w1/devices/28-000004540849/w1_slave] : 17.500°C
+Capteur[1|Extérieur|/sys/bus/w1/devices/28-000004549bbe/w1_slave] : 15.937°C
+Capteur[2|Etage|/sys/bus/w1/devices/28-00000454650f/w1_slave] : 18.250°C
+Capteur[3|Rez-de-chaussée|/sys/bus/w1/devices/28-000004540849/w1_slave] : 16.750°C
