@@ -13,28 +13,32 @@ angular
 		[
 			 '$scope',
 			 'myResources',
+			 '$q',
 			 '_',
-			 function ($scope, myResources, _) {
-				 var records = myResources.records.get().$promise.then(function(records) {
-					var test1 = _.map(
-						_.filter(records, {sensorId:1}),
-						function(record) {
-							return [Date.parse(record.date), record.value];
+			 function ($scope, myResources, $q, _) {
+				 
+				 
+				$q.all([
+					myResources.records.get().$promise,
+					myResources.sensors.get().$promise
+				]).then(function(data) {
+					var records = data[0];
+					var sensors = data[1];
+					
+					var series = [];
+					
+					_.forEach(
+						sensors,
+						function(sensor) {
+							
+							var newSerie = {
+								'name' : sensor.label,
+								'data' : _.map(_.filter(records, {sensorId:sensor.id}),function(record) {return [Date.parse(record.date), record.value];})
+							};
+							
+							series.push(newSerie);
 						}
 					);
-					var test2 = _.map(
-							_.filter(records, {sensorId:2}),
-							function(record) {
-								return [Date.parse(record.date), record.value];
-							}
-					);
-					var test3 = _.map(
-							_.filter(records, {sensorId:3}),
-							function(record) {
-								return [Date.parse(record.date), record.value];
-							}
-					);
-					
 					
 					$scope.termperaturesConfig = {
 							options: {
@@ -52,13 +56,7 @@ angular
 							//The below properties are watched separately for changes.
 							
 							//Series object (optional) - a list of series using normal highcharts series options.
-							series: [{
-								data: test1
-							},{
-								data: test2
-							},{
-								data: test3
-							}],
+							series: series,
 							//Title configuration (optional)
 							title: {
 								text: 'Hello'
@@ -82,10 +80,7 @@ angular
 								//setup some logic for the chart
 							}
 					};
-				 });
-				 
-				 
-				 
+				});
 			 }
 		]
 	);

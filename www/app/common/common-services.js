@@ -9,7 +9,14 @@ angular
         function ($resource) {
 
             return {
-                records: $resource("http://192.168.1.50:3000/api/temperatures/records", null,
+                records: $resource("http://192.168.1.50:3000/api/records", null,
+                    {
+                        get: {
+                            method: 'GET',
+                        	isArray: true
+                        }
+                    }),
+                sensors: $resource("http://192.168.1.50:3000/api/sensors", null,
                     {
                         get: {
                             method: 'GET',
