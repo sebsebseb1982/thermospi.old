@@ -16,13 +16,25 @@ angular
 			 '_',
 			 function ($scope, myResources, _) {
 				 var records = myResources.records.get().$promise.then(function(records) {
-					var test = _.map(
+					var test1 = _.map(
 						_.filter(records, {sensorId:1}),
 						function(record) {
-							return [new Date(Date.parse(record.date)), record.value];
+							return [Date.parse(record.date), record.value];
 						}
 					);
-					console.log(test);
+					var test2 = _.map(
+							_.filter(records, {sensorId:2}),
+							function(record) {
+								return [Date.parse(record.date), record.value];
+							}
+					);
+					var test3 = _.map(
+							_.filter(records, {sensorId:3}),
+							function(record) {
+								return [Date.parse(record.date), record.value];
+							}
+					);
+					
 					
 					$scope.termperaturesConfig = {
 							options: {
@@ -41,7 +53,11 @@ angular
 							
 							//Series object (optional) - a list of series using normal highcharts series options.
 							series: [{
-								data: test
+								data: test1
+							},{
+								data: test2
+							},{
+								data: test3
 							}],
 							//Title configuration (optional)
 							title: {
