@@ -12,7 +12,8 @@ angular
                 records: $resource("http://192.168.1.50:3000/api/temperatures/records", null,
                     {
                         get: {
-                            method: 'GET'
+                            method: 'GET',
+                        	isArray: true
                         }
                     })/*,
                 coordonnees: $resource('/cv-api/:idRCI/coordonnees',
