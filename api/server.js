@@ -86,6 +86,19 @@ sensors.get(function(req,res){
 	});
 });
 
+var setPoints = router.route('/setpoints');
+
+setPoints.post(function(req,res){
+	var exec = require('child_process').exec;
+	exec('~/thermospi/scripts/setPoint.sh 64', function(error, stdout, stderr) {
+	    console.log('stdout: ', stdout);
+	    console.log('stderr: ', stderr);
+	    if (error !== null) {
+	        console.log('exec error: ', error);
+	    }
+	});
+});
+
 //now we need to apply our router here
 app.use('/api', router);
 
