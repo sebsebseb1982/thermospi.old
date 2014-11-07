@@ -28,11 +28,6 @@ app.use(
     },'request')
 );
 
-app.get('/',function(req,res){
-    res.send('Welcome');
-});
-
-
 //RESTful route
 var router = express.Router();
 
@@ -49,7 +44,7 @@ router.use(function(req, res, next) {
     next();
 });
 
-var records = router.route('/temperatures/records');
+var records = router.route('/records');
 
 records.get(function(req,res){
 
@@ -70,7 +65,7 @@ records.get(function(req,res){
     });
 });
 
-var sensors = router.route('/temperatures/sensors');
+var sensors = router.route('/sensors');
 
 sensors.get(function(req,res){
 	
