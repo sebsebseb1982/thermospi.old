@@ -1,0 +1,33 @@
+BASH=/bin/bash
+BASHOPTS=cmdhist:extquote:force_fignore:hostcomplete:interactive_comments:progcomp:promptvars:sourcepath
+BASH_ALIASES=()
+BASH_ARGC=()
+BASH_ARGV=()
+BASH_CMDS=()
+BASH_LINENO=([0]="0")
+BASH_SOURCE=([0]="/home/pi/thermospi/scripts/init.sh")
+BASH_VERSINFO=([0]="4" [1]="2" [2]="37" [3]="1" [4]="release" [5]="arm-unknown-linux-gnueabihf")
+BASH_VERSION='4.2.37(1)-release'
+DIRSTACK=()
+EUID=1000
+GROUPS=()
+HOME=/home/pi
+HOSTNAME=raspberrypi
+HOSTTYPE=arm
+IFS=$' \t\n'
+LANG=fr_FR
+LOGNAME=pi
+MACHTYPE=arm-unknown-linux-gnueabihf
+OPTERR=1
+OPTIND=1
+OSTYPE=linux-gnueabihf
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin
+PPID=1947
+PS4='+ '
+PWD=/home/pi
+SHELL=/bin/sh
+SHELLOPTS=braceexpand:hashall:interactive-comments
+SHLVL=1
+TERM=dumb
+UID=1000
+_=/bin/bash

@@ -90,7 +90,8 @@ var setPoints = router.route('/setpoints');
 
 setPoints.get(function(req,res){
 	
-	 req.assert(req.query.value,'Setpoint value is required').notEmpty();
+
+	 req.assert('value','Setpoint value is required').notEmpty();
 	 var errors = req.validationErrors();
 	 if(errors){
 		 res.status(422).json(errors);
@@ -104,6 +105,8 @@ setPoints.get(function(req,res){
 	    if (error !== null) {
 	        console.log('exec error: ', error);
 	    }
+            res.setHeader('Content-Type', 'text/plain');
+            res.end(stdout);
 	});
 });
 
