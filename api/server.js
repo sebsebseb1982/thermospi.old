@@ -88,9 +88,17 @@ sensors.get(function(req,res){
 
 var setPoints = router.route('/setpoints');
 
-setPoints.post(function(req,res){
+setPoints.get(function(req,res){
+	
+	 req.assert(req.query.value,'Setpoint value is requireb').notEmpty();
+	 var errors = req.validationErrors();
+	 if(errors){
+		 res.status(422).json(errors);
+		 return;
+	 }
+	
 	var exec = require('child_process').exec;
-	exec('~/thermospi/scripts/setPoint.sh 64', function(error, stdout, stderr) {
+	exec('~/thermospi/scripts/setPoint.sh ' + req.query.value, function(error, stdout, stderr) {
 	    console.log('stdout: ', stdout);
 	    console.log('stderr: ', stderr);
 	    if (error !== null) {
