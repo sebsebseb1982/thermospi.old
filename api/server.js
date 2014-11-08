@@ -90,7 +90,7 @@ var setPoints = router.route('/setpoints');
 
 setPoints.get(function(req,res){
 	
-	 req.assert(req.query.value,'Setpoint value is requireb').notEmpty();
+	 req.assert(req.query.value,'Setpoint value is required').notEmpty();
 	 var errors = req.validationErrors();
 	 if(errors){
 		 res.status(422).json(errors);
