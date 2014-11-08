@@ -88,9 +88,7 @@ sensors.get(function(req,res){
 
 var setPoints = router.route('/setpoints');
 
-setPoints.get(function(req,res){
-	
-
+setPoints.post(function(req,res){
 	 req.assert('value','Setpoint value is required').notEmpty();
 	 var errors = req.validationErrors();
 	 if(errors){
