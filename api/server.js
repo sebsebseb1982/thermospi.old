@@ -107,6 +107,13 @@ setPoints.get(function(req,res){
 	});
 });
 
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
+
 //now we need to apply our router here
 app.use('/api', router);
 
