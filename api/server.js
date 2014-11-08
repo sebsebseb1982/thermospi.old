@@ -86,15 +86,38 @@ sensors.get(function(req,res){
 	});
 });
 
+/* ====================================================================================================== */
+/* Consignes thermostat */
+/* ====================================================================================================== */
+
 var setPoints = router.route('/setpoints');
 
+setPoints.get(function(req,res){
+	
+	req.getConnection(function(err,conn){
+		
+		if (err) return next("Cannot Connect");
+		
+		var query = conn.query('SELECT * FROM setpoints',function(err,rows){
+			
+			if(err){
+				console.log(err);
+				return next("Mysql error, check your query");
+			}
+			
+			res.setHeader('Content-Type', 'application/json');
+			res.end(JSON.stringify(rows, null, 3));
+		});
+	});
+});
+
 setPoints.post(function(req,res){
-	 req.assert('value','Setpoint value is required').notEmpty();
-	 var errors = req.validationErrors();
-	 if(errors){
-		 res.status(422).json(errors);
-		 return;
-	 }
+	req.assert('value','Setpoint value is required').notEmpty();
+	var errors = req.validationErrors();
+	if(errors){
+		res.status(422).json(errors);
+		return;
+	}
 	
 	var exec = require('child_process').exec;
 	exec('~/thermospi/scripts/setPoint.sh ' + req.query.value, function(error, stdout, stderr) {
