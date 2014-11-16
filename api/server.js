@@ -52,7 +52,7 @@ records.get(function(req,res){
 
         if (err) return next("Cannot Connect");
 
-        var query = conn.query('SELECT * FROM records',function(err,rows){
+        var query = conn.query('SELECT * FROM records WHERE date >= ( CURDATE() - INTERVAL 3 DAY )',function(err,rows){
 
             if(err){
                 console.log(err);
@@ -98,7 +98,7 @@ setPoints.get(function(req,res){
 		
 		if (err) return next("Cannot Connect");
 		
-		var query = conn.query('SELECT * FROM setpoints',function(err,rows){
+		var query = conn.query('SELECT * FROM setpoints WHERE date >= ( CURDATE() - INTERVAL 3 DAY )',function(err,rows){
 			
 			if(err){
 				console.log(err);
