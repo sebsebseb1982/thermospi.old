@@ -20,10 +20,12 @@ angular
 				 
 				$q.all([
 					myResources.records.get().$promise,
-					myResources.sensors.get().$promise
+					myResources.sensors.get().$promise,
+					myResources.setpoints.get().$promise
 				]).then(function(data) {
 					var records = data[0];
 					var sensors = data[1];
+					var setpoints = data[2];
 					
 					var series = [];
 					
@@ -39,6 +41,16 @@ angular
 							series.push(newSerie);
 						}
 					);
+					
+					var setpointsSerie = {
+						'name' : 'Consigne',
+						'step' : true,
+						'color' :'#FF4040',
+						'type' : 'area',
+						'data' : _.map(setpoints,function(setpoint) {return [Date.parse(setpoint.date), setpoint.value];})
+					};
+					
+					series.push(setpointsSerie);
 					
 					$scope.termperaturesConfig = {
 							options: {

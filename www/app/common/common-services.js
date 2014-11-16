@@ -22,17 +22,20 @@ angular
                             method: 'GET',
                         	isArray: true
                         }
-                    })/*,
-                coordonnees: $resource('/cv-api/:idRCI/coordonnees',
+                    }),
+                setpoints: $resource("http://192.168.1.50:3000/api/setpoints", null,
                     {
-                        idRCI: $stateParams.idRCI
-                    },
-                    {
-                        get: {
-                            method: 'GET',
-                            cache: cacheFactory
-                        }
-                    })*/
+                        post: {
+                            method: 'POST',
+                            params: {
+                                action: "rafraichissement"
+                            }
+                        },
+		                get: {
+		                	method: 'GET',
+                        	isArray: true
+		                }
+                    })
             }
         }
     ])
