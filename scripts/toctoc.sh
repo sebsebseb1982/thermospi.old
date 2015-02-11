@@ -3,7 +3,7 @@
 username=$1
 password=$2
 
-curl -u $username:$password --silent "https://mail.google.com/mail/feed/atom" |  grep -oPm1 "(?<=<title>)[^<]+" | sed '1d' | while read arg1; do
+curl -u $username:$password --silent "https://mail.google.com/mail/feed/atom/Alarme" |  grep -oPm1 "(?<=<title>)[^<]+" | sed '1d' | while read arg1; do
    REGEX="([a-zA-Z]+)rmement.*"
    echo $arg1
    if [[ $arg1 =~ $REGEX ]]
