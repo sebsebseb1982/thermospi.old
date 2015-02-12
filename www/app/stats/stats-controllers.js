@@ -55,7 +55,7 @@ angular
 					$scope.termperaturesConfig = {
 							options: {
 								chart: {
-									type: 'line'
+									type: 'spline'
 								},
 								tooltip: {
 									style: {

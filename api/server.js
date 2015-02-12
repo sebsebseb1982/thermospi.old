@@ -62,10 +62,12 @@ var querySQL = function(req, res, sql) {
     });
 };
 
+var daysOfHistory = 1;
+
 router
     .route('/records')
     .get(function(req,res){
-        querySQL(req,res,'SELECT * FROM records WHERE date >= ( CURDATE() - INTERVAL 1 DAY )');
+        querySQL(req,res,'SELECT * FROM records WHERE date >= ( CURDATE() - INTERVAL ' + daysOfHistory + ' DAY )');
     });
 
 router
@@ -77,7 +79,7 @@ router
 router
     .route('/setpoints')
     .get(function(req,res){
-        querySQL(req,res,'SELECT * FROM setpoints WHERE date >= ( CURDATE() - INTERVAL 1 DAY )');
+        querySQL(req,res,'SELECT * FROM setpoints WHERE date >= ( CURDATE() - INTERVAL ' + daysOfHistory + ' DAY )');
     })
     .post(function(req,res){
         req.assert('value','Setpoint value is required').notEmpty();
