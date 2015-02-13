@@ -52,7 +52,29 @@ angular
 						'data' : _.map(setpoints,function(setpoint) {return [Date.parse(setpoint.date), setpoint.value];})
 					};
 
-					var statusBands = status;
+					var statusBands = [];
+					var from;
+					_.forEach(status, function(status){
+						if(!from && status.status == 1) {
+							from = status.date;
+						} else if (from && status.status == 0) {
+							statusBands.push({
+								from: Date.parse(from),
+								to: Date.parse(status.date),
+								color: 'rgba(68, 170, 213, 0.9)',
+								label: {
+									text: 'Chauffage',
+									style: {
+										color: '#606060'
+									}
+								}
+							});
+							from = undefined;
+						}
+					});
+
+
+
 					console.log(statusBands);
 
 					series.push(setpointsSerie);
@@ -84,17 +106,7 @@ angular
 							//properties currentMin and currentMax provied 2-way binding to the chart's maximimum and minimum
 							xAxis: {
 								type: 'datetime',
-								plotBands: [{
-									from: Date.UTC(2015, 01, 12),
-									to: Date.UTC(2015, 01, 13),
-									color: 'rgba(68, 170, 213, 0.9)',
-									label: {
-										text: 'Chauffage',
-										style: {
-											color: '#606060'
-										}
-									}
-								}]
+								plotBands: statusBands
 							},
 							//Whether to use HighStocks instead of HighCharts (optional). Defaults to false.
 							useHighStocks: false,
