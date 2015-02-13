@@ -48,7 +48,7 @@ angular
 						'name' : 'Consigne',
 						'step' : true,
 						'color' :'#FF4040',
-						'type' : 'area',
+						'type' : 'line',
 						'data' : _.map(setpoints,function(setpoint) {return [Date.parse(setpoint.date), setpoint.value];})
 					};
 
@@ -61,11 +61,12 @@ angular
 							statusBands.push({
 								from: Date.parse(from),
 								to: Date.parse(status.date),
-								color: 'rgba(68, 170, 213, 0.9)',
+								color: 'rgba(150, 150, 150, 0.3)',
 								label: {
-									text: 'Chauffage',
+									text: 'Chauffage (' + (status.date.getMinutes() - from.getMinutes()) + ' minutes)',
 									style: {
-										color: '#606060'
+										color: '#606060',
+										rotation: -90
 									}
 								}
 							});
