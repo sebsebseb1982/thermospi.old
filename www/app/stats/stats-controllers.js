@@ -62,7 +62,7 @@ angular
 							statusBands.push({
 								from: from,
 								to: to,
-								color: 'rgba(150, 150, 150, 0.3)',
+								color: 'rgba(150, 0, 0, 0.3)',
 								label: {
 									text: Math.floor((Math.abs(to-from)/1000)/60) + ' min.',
 									style: {
@@ -110,7 +110,7 @@ angular
 							useHighStocks: false,
 							//size (optional) if left out the chart will default to size of the div or something sensible.
 							size: {
-								height: 300
+								height: 500
 							},
 							//function (optional)
 							func: function (chart) {
