@@ -85,7 +85,7 @@ router
 router
     .route('/setpoints')
     .get(function(req,res){
-        querySQL(req,res,'SELECT * FROM setpoints WHERE date >= ( CURDATE() - INTERVAL ' + daysOfHistory + ' DAY )');
+        querySQL(req,res,'SELECT * FROM setpoints WHERE date >= (SELECT date FROM setpoints WHERE date < ( CURDATE() - INTERVAL ' + daysOfHistory + ' DAY ) order by date DESC limit 1);');
     })
     .post(function(req,res){
         req.assert('value','Setpoint value is required').notEmpty();
