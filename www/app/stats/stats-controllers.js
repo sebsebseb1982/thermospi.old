@@ -59,7 +59,7 @@ angular
 							from = Date.parse(status.date);
 						} else if (from && status.status == 0) {
 							var to = Date.parse(status.date);
-							console.log('from', new date(from));
+							console.log('from', new Date(from));
 							console.log('to', new Date(to));
 							console.log('durée', (new Date(to).getMinutes() - new Date(from).getMinutes()));
 
