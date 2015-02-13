@@ -82,8 +82,8 @@ angular
 							xAxis: {
 								type: 'datetime',
 								plotBands: [{
-									from: Date.UTC(2015, 02, 12),
-									to: Date.UTC(2015, 02, 13),
+									from: Date.UTC(2015, 01, 12),
+									to: Date.UTC(2015, 01, 13),
 									color: 'rgba(68, 170, 213, 0.9)',
 									label: {
 										text: 'Chauffage',
