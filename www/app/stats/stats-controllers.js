@@ -68,6 +68,7 @@ angular
 									style: {
 										color: '#606060'
 									},
+									align:'center',
 									rotation: -90
 								}
 							});
