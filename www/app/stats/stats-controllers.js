@@ -59,6 +59,7 @@ angular
 							from = Date.parse(status.date);
 						} else if (from && status.status == 0) {
 							var to = Date.parse(status.date);
+							console.log(to);
 							statusBands.push({
 								from: from,
 								to: to,
