@@ -64,7 +64,7 @@ angular
 								to: to,
 								color: 'rgba(150, 150, 150, 0.3)',
 								label: {
-									text: Math.abs(Math.round((((to-from) % 86400000) % 3600000) / 60000)) + ' min.',
+									text: Math.floor((Math.abs(to-from)/1000)/60) + ' min.',
 									style: {
 										color: '#606060'
 									},
