@@ -59,17 +59,20 @@ angular
 							from = Date.parse(status.date);
 						} else if (from && status.status == 0) {
 							var to = Date.parse(status.date);
-							console.log(to);
+							console.log('from', from);
+							console.log('to', to);
+							console.log('durée', (new Date(to).getMinutes() - new Date(from).getMinutes()));
+
 							statusBands.push({
 								from: from,
 								to: to,
 								color: 'rgba(150, 150, 150, 0.3)',
 								label: {
-									text: 'Chauffage<br/>(' + (new Date(to).getMinutes() - new Date(from).getMinutes()) + ' minutes)',
+									text: (new Date(to).getMinutes() - new Date(from).getMinutes()) + ' min.',
 									style: {
-										color: '#606060',
-										rotation: -90
-									}
+										color: '#606060'
+									},
+									rotation: -90
 								}
 							});
 							from = undefined;
