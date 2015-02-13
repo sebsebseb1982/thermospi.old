@@ -51,7 +51,10 @@ angular
 						'type' : 'area',
 						'data' : _.map(setpoints,function(setpoint) {return [Date.parse(setpoint.date), setpoint.value];})
 					};
-					
+
+					var statusBands = status;
+					console.log(statusBands);
+
 					series.push(setpointsSerie);
 					
 					$scope.termperaturesConfig = {
