@@ -65,7 +65,7 @@ angular
 								to: to,
 								color: 'rgba(150, 150, 150, 0.3)',
 								label: {
-									text: 'Chauffage (' + (to.getMinutes() - from.getMinutes()) + ' minutes)',
+									text: 'Chauffage<br/>(' + (new Date(to).getMinutes() - new Date(from).getMinutes()) + ' minutes)',
 									style: {
 										color: '#606060',
 										rotation: -90
