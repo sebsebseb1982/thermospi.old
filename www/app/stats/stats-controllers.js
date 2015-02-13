@@ -56,14 +56,15 @@ angular
 					var from;
 					_.forEach(status, function(status){
 						if(!from && status.status == 1) {
-							from = status.date;
+							from = Date.parse(status.date);
 						} else if (from && status.status == 0) {
+							var to = Date.parse(status.date);
 							statusBands.push({
-								from: Date.parse(from),
-								to: Date.parse(status.date),
+								from: from,
+								to: to,
 								color: 'rgba(150, 150, 150, 0.3)',
 								label: {
-									text: 'Chauffage (' + (status.date.getMinutes() - from.getMinutes()) + ' minutes)',
+									text: 'Chauffage (' + (to.getMinutes() - from.getMinutes()) + ' minutes)',
 									style: {
 										color: '#606060',
 										rotation: -90
@@ -74,12 +75,8 @@ angular
 						}
 					});
 
-
-
-					console.log(statusBands);
-
 					series.push(setpointsSerie);
-					
+
 					$scope.termperaturesConfig = {
 							options: {
 								chart: {
