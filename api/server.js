@@ -71,6 +71,12 @@ router
     });
 
 router
+    .route('/status')
+    .get(function(req,res){
+        querySQL(req,res,'SELECT * FROM status WHERE date >= ( CURDATE() - INTERVAL ' + daysOfHistory + ' DAY )');
+    });
+
+router
     .route('/sensors')
     .get(function(req,res){
         querySQL(req,res,'SELECT * FROM sensors');

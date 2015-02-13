@@ -21,11 +21,13 @@ angular
 				$q.all([
 					myResources.records.get().$promise,
 					myResources.sensors.get().$promise,
+					myResources.status.get().$promise,
 					myResources.setpoints.get().$promise
 				]).then(function(data) {
 					var records = data[0];
 					var sensors = data[1];
-					var setpoints = data[2];
+					var status = data[2];
+					var setpoints = data[3];
 					
 					var series = [];
 					
@@ -78,7 +80,18 @@ angular
 							//Configuration for the xAxis (optional). Currently only one x axis can be dynamically controlled.
 							//properties currentMin and currentMax provied 2-way binding to the chart's maximimum and minimum
 							xAxis: {
-								type: 'datetime'
+								type: 'datetime',
+								plotBands: [{
+									from: Date.UTC(2015, 02, 12),
+									to: Date.UTC(2015, 02, 13),
+									color: 'rgba(68, 170, 213, 0.1)',
+									label: {
+										text: 'Chauffage',
+										style: {
+											color: '#606060'
+										}
+									}
+								}]
 							},
 							//Whether to use HighStocks instead of HighCharts (optional). Defaults to false.
 							useHighStocks: false,
