@@ -52,6 +52,22 @@ angular
 						'data' : _.map(setpoints,function(setpoint) {return [Date.parse(setpoint.date), setpoint.value];})
 					};
 
+					var getAPlotBand = function(from, to) {
+						return {
+							from: from,
+							to: to,
+							color: 'rgba(255, 0, 0, 0.1)',
+							label: {
+								text: Math.floor((Math.abs(to-from)/1000)/60) + ' min.',
+								style: {
+									color: '#606060'
+								},
+								verticalAlign: 'middle',
+								rotation: -90
+							}
+						}
+					};
+
 					var statusBands = [];
 					var from;
 					_.forEach(status, function(status){
@@ -59,22 +75,14 @@ angular
 							from = Date.parse(status.date);
 						} else if (from && status.status == 0) {
 							var to = Date.parse(status.date);
-							statusBands.push({
-								from: from,
-								to: to,
-								color: 'rgba(255, 0, 0, 0.1)',
-								label: {
-									text: Math.floor((Math.abs(to-from)/1000)/60) + ' min.',
-									style: {
-										color: '#606060'
-									},
-									verticalAlign: 'middle',
-									rotation: -90
-								}
-							});
+							statusBands.push(getAPlotBand(from, to));
 							from = undefined;
 						}
 					});
+
+					if(from) {
+						statusBands.push(getAPlotBand(from, new Date()));
+					}
 
 					series.push(setpointsSerie);
 
