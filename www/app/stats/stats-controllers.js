@@ -62,7 +62,7 @@ angular
 							statusBands.push({
 								from: from,
 								to: to,
-								color: 'rgba(150, 0, 0, 0.3)',
+								color: 'rgba(255, 0, 0, 0.1)',
 								label: {
 									text: Math.floor((Math.abs(to-from)/1000)/60) + ' min.',
 									style: {
