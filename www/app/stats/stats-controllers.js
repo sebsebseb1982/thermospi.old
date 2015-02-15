@@ -28,10 +28,11 @@ angular
 					var sensors = data[1];
 					var status = data[2];
 					var setpoints = data[3];
-					var finalSetPoint = undefined;
-					angular.copy(setpoints[setpoints.length - 1], finalSetPoint);
-					finalSetPoint.id = finalSetPoint.id + 1;
-					finalSetPoint.date = new Date();
+					var finalSetPoint = {
+						'id' : setpoints[setpoints.length - 1].id,
+						'value' : setpoints[setpoints.length - 1].value,
+						'date' : new Date()
+					};
 					console.log('A', setpoints);
 					setpoints.push(finalSetPoint);
 					console.log('B', setpoints);
