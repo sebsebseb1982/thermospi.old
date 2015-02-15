@@ -31,8 +31,10 @@ angular
 					var finalSetPoint = setpoints[setpoints.length - 1];
 					finalSetPoint.id = finalSetPoint.id + 1;
 					finalSetPoint.date = new Date();
+					console.log('A', setpoints);
 					setpoints.push(finalSetPoint);
-					
+					console.log('B', setpoints);
+
 					var series = [];
 					
 					_.forEach(
