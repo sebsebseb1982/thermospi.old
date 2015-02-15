@@ -28,6 +28,10 @@ angular
 					var sensors = data[1];
 					var status = data[2];
 					var setpoints = data[3];
+					var finalSetPoint = setpoints[setpoints.length - 1];
+					finalSetPoint.setId(finalSetPoint.getId + 1);
+					finalSetPoint.setDate(new Date());
+					setpoints.push(finalSetPoint);
 					
 					var series = [];
 					
