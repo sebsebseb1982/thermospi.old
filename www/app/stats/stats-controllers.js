@@ -29,8 +29,8 @@ angular
 					var status = data[2];
 					var setpoints = data[3];
 					var finalSetPoint = setpoints[setpoints.length - 1];
-					finalSetPoint.setId(finalSetPoint.getId + 1);
-					finalSetPoint.setDate(new Date());
+					finalSetPoint.id = finalSetPoint.id + 1;
+					finalSetPoint.date = new Date();
 					setpoints.push(finalSetPoint);
 					
 					var series = [];
