@@ -5,10 +5,12 @@ source ~/thermospi/scripts/setVars.sh
 ~/thermospi/scripts/toctoc.sh $1 $2
 PRESENCE=$?
 
+ echo "Presence dans la maison -> "$PRESENCE
+
 # Si la detection de presence s'est correctement passee
 if [[ $PRESENCE == 0 || $PRESENCE == 1 ]]
 then
-   #echo "Presence dans la maison -> "$PRESENCE
+   echo "Presence dans la maison -> "$PRESENCE
 
    # On recupere la derniere consigne de niveau systeme
    DERNIERE_CONSIGNE_NIVEAU_SYSTEME=$(mysql -u $DB_USER -p$DB_PASSWORD -se 'SELECT s.status FROM temperatures.`status` s WHERE s.date < NOW() AND s.priority = '$SYSTEM_LEVEL' ORDER BY s.date DESC LIMIT 1' $DB_NAME)

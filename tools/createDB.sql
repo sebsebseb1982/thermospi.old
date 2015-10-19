@@ -1,3 +1,5 @@
+CREATE DATABASE IF NOT EXISTS temperatures;
+
 USE temperatures;
 SET FOREIGN_KEY_CHECKS=0;
 

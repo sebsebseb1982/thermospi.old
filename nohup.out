@@ -181,3 +181,467 @@ Listening to port 3000
 GET /records
 GET /sensors
 GET /setpoints
+Listening to port 3000
+GET /records
+GET /sensors
+GET /setpoints
+ReferenceError: err is not defined
+    at /home/pi/thermospi/api/server.js:65:32
+    at Layer.handle [as handle_request] (/home/pi/thermospi/api/node_modules/express/lib/router/layer.js:76:5)
+    at next (/home/pi/thermospi/api/node_modules/express/lib/router/route.js:100:13)
+    at Route.dispatch (/home/pi/thermospi/api/node_modules/express/lib/router/route.js:81:3)
+    at Layer.handle [as handle_request] (/home/pi/thermospi/api/node_modules/express/lib/router/layer.js:76:5)
+    at /home/pi/thermospi/api/node_modules/express/lib/router/index.js:234:24
+    at Function.proto.process_params (/home/pi/thermospi/api/node_modules/express/lib/router/index.js:312:12)
+    at /home/pi/thermospi/api/node_modules/express/lib/router/index.js:228:12
+    at Function.match_layer (/home/pi/thermospi/api/node_modules/express/lib/router/index.js:295:3)
+    at next (/home/pi/thermospi/api/node_modules/express/lib/router/index.js:189:10)
+GET /records
+GET /sensors
+GET /setpoints
+ReferenceError: err is not defined
+    at /home/pi/thermospi/api/server.js:65:32
+    at Layer.handle [as handle_request] (/home/pi/thermospi/api/node_modules/express/lib/router/layer.js:76:5)
+    at next (/home/pi/thermospi/api/node_modules/express/lib/router/route.js:100:13)
+    at Route.dispatch (/home/pi/thermospi/api/node_modules/express/lib/router/route.js:81:3)
+    at Layer.handle [as handle_request] (/home/pi/thermospi/api/node_modules/express/lib/router/layer.js:76:5)
+    at /home/pi/thermospi/api/node_modules/express/lib/router/index.js:234:24
+    at Function.proto.process_params (/home/pi/thermospi/api/node_modules/express/lib/router/index.js:312:12)
+    at /home/pi/thermospi/api/node_modules/express/lib/router/index.js:228:12
+    at Function.match_layer (/home/pi/thermospi/api/node_modules/express/lib/router/index.js:295:3)
+    at next (/home/pi/thermospi/api/node_modules/express/lib/router/index.js:189:10)
+Listening to port 3000
+GET /records
+GET /sensors
+GET /setpoints
+Listening to port 3000
+GET /records
+GET /sensors
+GET /setpoints
+GET /records
+GET /sensors
+GET /setpoints
+Listening to port 3000
+Listening to port 3000
+GET /records
+GET /sensors
+GET /setpoints
+
+ReferenceError: next is not defined
+    at /home/pi/thermospi/api/server.js:50:25
+    at Handshake._callback (/home/pi/thermospi/api/node_modules/express-myconnection/lib/express-myconnection.js:102:41)
+    at Handshake.Sequence.end (/home/pi/thermospi/api/node_modules/mysql/lib/protocol/sequences/Sequence.js:96:24)
+    at Protocol.handleNetworkError (/home/pi/thermospi/api/node_modules/mysql/lib/protocol/Protocol.js:355:14)
+    at Connection._handleNetworkError (/home/pi/thermospi/api/node_modules/mysql/lib/Connection.js:355:18)
+    at Socket.emit (events.js:95:17)
+    at net.js:440:14
+    at process._tickCallback (node.js:419:13)
+Listening to port 3000
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+Listening to port 3000
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+Listening to port 3000
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+Listening to port 3000
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+Listening to port 3000
+GET /status
+GET /records
+GET /sensors
+GET /setpoints
+Listening to port 3000
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+Listening to port 3000
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+Listening to port 3000
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+Listening to port 3000
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+Listening to port 3000
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+Listening to port 3000
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+Listening to port 3000
+GET /status
+GET /records
+GET /sensors
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+Listening to port 3000
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+Listening to port 3000
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+Listening to port 3000
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /status
+GET /sensors
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /setpoints
+GET /status
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /sensors
+GET /records
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /setpoints
+GET /status
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /setpoints
+GET /status
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /setpoints
+GET /status
+GET /records
+GET /status
+GET /sensors
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+Listening to port 3000
+Listening to port 3000
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+Listening to port 3000
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+
+/home/pi/thermospi/api/node_modules/mysql/lib/protocol/Parser.js:82
+        throw err;
+              ^
+ReferenceError: next is not defined
+    at /home/pi/thermospi/api/server.js:50:25
+    at Handshake._callback (/home/pi/thermospi/api/node_modules/express-myconnection/lib/express-myconnection.js:102:41)
+    at Handshake.Sequence.end (/home/pi/thermospi/api/node_modules/mysql/lib/protocol/sequences/Sequence.js:96:24)
+    at Handshake.ErrorPacket (/home/pi/thermospi/api/node_modules/mysql/lib/protocol/sequences/Handshake.js:103:8)
+    at Protocol._parsePacket (/home/pi/thermospi/api/node_modules/mysql/lib/protocol/Protocol.js:271:23)
+    at Parser.write (/home/pi/thermospi/api/node_modules/mysql/lib/protocol/Parser.js:77:12)
+    at Protocol.write (/home/pi/thermospi/api/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/home/pi/thermospi/api/node_modules/mysql/lib/Connection.js:82:28)
+    at Socket.emit (events.js:95:17)
+    at Socket.<anonymous> (_stream_readable.js:764:14)
+Listening to port 3000
+GET /records
+GET /records
+{ [Error: ER_QUERY_INTERRUPTED: Query execution was interrupted]
+  code: 'ER_QUERY_INTERRUPTED',
+  errno: 1317,
+  sqlState: '70100',
+  index: 0 }
+
+/home/pi/thermospi/api/node_modules/mysql/lib/protocol/Parser.js:82
+        throw err;
+              ^
+ReferenceError: next is not defined
+    at Query._callback (/home/pi/thermospi/api/server.js:56:24)
+    at Query.Sequence.end (/home/pi/thermospi/api/node_modules/mysql/lib/protocol/sequences/Sequence.js:96:24)
+    at Query.ErrorPacket (/home/pi/thermospi/api/node_modules/mysql/lib/protocol/sequences/Query.js:93:8)
+    at Protocol._parsePacket (/home/pi/thermospi/api/node_modules/mysql/lib/protocol/Protocol.js:271:23)
+    at Parser.write (/home/pi/thermospi/api/node_modules/mysql/lib/protocol/Parser.js:77:12)
+    at Protocol.write (/home/pi/thermospi/api/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/home/pi/thermospi/api/node_modules/mysql/lib/Connection.js:82:28)
+    at Socket.emit (events.js:95:17)
+    at Socket.<anonymous> (_stream_readable.js:764:14)
+    at Socket.emit (events.js:92:17)
+Listening to port 3000
+GET /records
+GET /records
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+Listening to port 3000
+Listening to port 3000
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
