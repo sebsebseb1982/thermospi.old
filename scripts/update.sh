@@ -44,7 +44,11 @@ afficherConsignePourNiveau() {
 
 # On recupere la consigne de chauffage courante
 CONSIGNE_TEMPERATURE=$(mysql -u $DB_USER -p$DB_PASSWORD -se 'SELECT s.value FROM setpoints s WHERE s.date < NOW() ORDER BY s.date DESC LIMIT 1' $DB_NAME)
-echo "Consigne de temperature -> "$CONSIGNE_TEMPERATURE"Â°C"
+
+# On recupere la temperature moyenne recente du RDC et de l'etage
+TEMPERATURE_AMBIANTE=$(mysql -u $DB_USER -p$DB_PASSWORD -se 'SELECT ROUND(AVG(value),3) FROM records WHERE date > (NOW() - INTERVAL '$TEMPERATURE_RECORD_FREQUENCY' minute) AND (sensorId = 2 OR sensorId = 3)' $DB_NAME)
+
+echo "Temperature [actuellement="$TEMPERATURE_AMBIANTE"°C, cible="$CONSIGNE_TEMPERATURE"°C]"
 
 # On recupere la derniere consigne de niveau utilisateur
 DERNIERE_CONSIGNE_NIVEAU_UTILISATEUR=$(mysql -u $DB_USER -p$DB_PASSWORD -se 'SELECT s.status FROM temperatures.`status` s WHERE s.date < NOW() AND s.priority = '$USER_LEVEL' ORDER BY s.date DESC LIMIT 1' $DB_NAME)
@@ -61,11 +65,6 @@ then
    # Si qq'un est present dans la maison
    if [ "$DERNIERE_CONSIGNE_NIVEAU_SYSTEME" == 1 ]
    then
-
-      # On recupere la temperature moyenne recente du RDC et de l'etage
-      TEMPERATURE_AMBIANTE=$(mysql -u $DB_USER -p$DB_PASSWORD -se 'SELECT AVG(value) FROM records WHERE date > (NOW() - INTERVAL '$TEMPERATURE_RECORD_FREQUENCY' minute) AND (sensorId = 2 OR sensorId = 3)' $DB_NAME)
-      echo "Temperature moyenne des "$TEMPERATURE_RECORD_FREQUENCY" dernieres minutes -> "$TEMPERATURE_AMBIANTE"Â°C"
-
       # Si la temperature moyenne est inferieure a la consigne moins l'hysteresis
       if [ `bc <<< $TEMPERATURE_AMBIANTE' < '$CONSIGNE_TEMPERATURE' - '$HYSTERESIS` = 1 ]
       then
@@ -92,3 +91,4 @@ elif [ "$DERNIERE_CONSIGNE_NIVEAU_UTILISATEUR" == 1 ]
 then
    updateGPIO 1
 fi
+
