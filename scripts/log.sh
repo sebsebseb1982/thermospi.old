@@ -27,7 +27,7 @@ mysql -u $DB_USER -p$DB_PASSWORD -e "SELECT * FROM sensors" $DB_NAME | tail -n 3
 
    done
 
-   echo "Capteur["$id"|"$label"|"$path"] : "$TEMP_VALUE"°C"
+   echo "Capteur["$id"|"$label"|"$path"] : "$TEMP_VALUE"Â°C"
 
    # Insertion de la valeur en base
    mysql -u $DB_USER -p$DB_PASSWORD -e 'INSERT INTO records (date,value,sensorId) VALUES (NOW(),'$TEMP_VALUE','$id')' $DB_NAME

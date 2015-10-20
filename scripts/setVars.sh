@@ -1,7 +1,7 @@
 #!/bin/bash
 
 setVar() {
-   echo "Set "$1" -> "$2
+   # echo "Set "$1" -> "$2
    eval "$1=$2"
 }
 

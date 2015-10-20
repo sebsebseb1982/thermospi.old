@@ -4,13 +4,15 @@ source ~/thermospi/scripts/setVars.sh
 updateGPIO() {
    gpio mode $GPIO_THERMOSTAT out
    gpio write $GPIO_THERMOSTAT $1
-   echo "Nouvel �tat thermostat -> "$1
+   NOUVEL_ETAT=$(traduireEtatVersAffichage $1)
+   echo "Etat thermostat -> "$NOUVEL_ETAT
 }
 
 updateThermostat() {
    # On recupere la derniere consigne de niveau thermostat
    ETAT_COURANT_THERMOSTAT=$(mysql -u $DB_USER -p$DB_PASSWORD -se 'SELECT s.status FROM temperatures.`status` s WHERE s.date < NOW() AND s.priority = '$THERMOSTAT_LEVEL' ORDER BY s.date DESC LIMIT 1' $DB_NAME)
-   echo "Etat courant thermostat              (priorite="$THERMOSTAT_LEVEL") -> "$ETAT_COURANT_THERMOSTAT
+   ETAT_COURANT_THERMOSTAT_AFFICHE=$(traduireEtatVersAffichage $ETAT_COURANT_THERMOSTAT)
+   echo "Etat courant thermostat              (priorite="$THERMOSTAT_LEVEL") -> "$ETAT_COURANT_THERMOSTAT_AFFICHAGE
 
    # On met a jour la sortie GPIO en fonction de l'etat voulu
    updateGPIO $1
@@ -22,13 +24,29 @@ updateThermostat() {
    fi
 }
 
+traduireEtatVersAffichage() {
+   if [ $1 == "NULL"  ]
+   then
+      echo "Automatique"
+   elif [ $1 == 0 ]
+   then
+      echo "Arret"
+   elif [ $1 == 1 ]
+   then
+      echo "Marche"
+   else
+      echo "Erreur !"
+   fi
+}
+
 # On recupere la consigne de chauffage courante
 CONSIGNE_TEMPERATURE=$(mysql -u $DB_USER -p$DB_PASSWORD -se 'SELECT s.value FROM setpoints s WHERE s.date < NOW() ORDER BY s.date DESC LIMIT 1' $DB_NAME)
-echo "Consigne de temperature -> "$CONSIGNE_TEMPERATURE"�C"
+echo "Consigne de temperature -> "$CONSIGNE_TEMPERATURE"°C"
 
 # On recupere la derniere consigne de niveau utilisateur
 DERNIERE_CONSIGNE_NIVEAU_UTILISATEUR=$(mysql -u $DB_USER -p$DB_PASSWORD -se 'SELECT s.status FROM temperatures.`status` s WHERE s.date < NOW() AND s.priority = '$USER_LEVEL' ORDER BY s.date DESC LIMIT 1' $DB_NAME)
-echo "Derniere consigne niveau utilisateur (priorite="$USER_LEVEL") -> "$DERNIERE_CONSIGNE_NIVEAU_UTILISATEUR
+DERNIERE_CONSIGNE_NIVEAU_UTILISATEUR_AFFICHEE=$(traduireEtatVersAffichage $DERNIERE_CONSIGNE_NIVEAU_UTILISATEUR)
+echo "Derniere consigne niveau utilisateur (priorite="$USER_LEVEL") -> "$DERNIERE_CONSIGNE_NIVEAU_UTILISATEUR_AFFICHEE
 
 # Si chauffage mode AUTO
 if [ "$DERNIERE_CONSIGNE_NIVEAU_UTILISATEUR" == "NULL" ]
@@ -36,7 +54,8 @@ then
 
    # On recupere la derniere consigne de niveau systeme
    DERNIERE_CONSIGNE_NIVEAU_SYSTEME=$(mysql -u $DB_USER -p$DB_PASSWORD -se 'SELECT s.status FROM temperatures.`status` s WHERE s.date < NOW() AND s.priority = '$SYSTEM_LEVEL' ORDER BY s.date DESC LIMIT 1' $DB_NAME)
-   echo "Derniere consigne niveau systeme     (priorite="$SYSTEM_LEVEL") -> "$DERNIERE_CONSIGNE_NIVEAU_SYSTEME
+   DERNIERE_CONSIGNE_NIVEAU_SYSTEME_AFFICHEE=$(traduireEtatVersAffichage $DERNIERE_CONSIGNE_NIVEAU_SYSTEME)
+   echo "Derniere consigne niveau systeme     (priorite="$SYSTEM_LEVEL") -> "$DERNIERE_CONSIGNE_NIVEAU_SYSTEME_AFFICHEE
 
    # Si qq'un est present dans la maison
    if [ "$DERNIERE_CONSIGNE_NIVEAU_SYSTEME" == 1 ]
@@ -44,7 +63,7 @@ then
 
       # On recupere la temperature moyenne recente du RDC et de l'etage
       TEMPERATURE_AMBIANTE=$(mysql -u $DB_USER -p$DB_PASSWORD -se 'SELECT AVG(value) FROM records WHERE date > (NOW() - INTERVAL '$TEMPERATURE_RECORD_FREQUENCY' minute) AND (sensorId = 2 OR sensorId = 3)' $DB_NAME)
-      echo "Temperature moyenne des "$TEMPERATURE_RECORD_FREQUENCY" dernieres minutes -> "$TEMPERATURE_AMBIANTE"�C"
+      echo "Temperature moyenne des "$TEMPERATURE_RECORD_FREQUENCY" dernieres minutes -> "$TEMPERATURE_AMBIANTE"°C"
 
       # Si la temperature moyenne est inferieure a la consigne moins l'hysteresis
       if [ `bc <<< $TEMPERATURE_AMBIANTE' < '$CONSIGNE_TEMPERATURE' - '$HYSTERESIS` = 1 ]
