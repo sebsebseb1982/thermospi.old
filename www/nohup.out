@@ -2170,3 +2170,81 @@ Hit CTRL-C to stop the server
 [Fri, 16 Oct 2015 17:16:49 GMT] "[36mGET[39m [36m/app/stats/partials/content.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0"
 [Fri, 16 Oct 2015 17:16:49 GMT] "[36mGET[39m [36m/favicon.ico[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0"
 [Fri, 16 Oct 2015 17:16:49 GMT] "[36mGET[39m [36m/favicon.ico[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0"
+
+> angular-seed@0.0.0 prestart /home/pi/thermospi/www
+> npm install
+
+npm WARN package.json karma-chrome-launcher@0.1.5 No README data
+npm WARN package.json karma-phantomjs-launcher@0.1.4 No README data
+
+> angular-seed@0.0.0 postinstall /home/pi/thermospi/www
+> bower install
+
+
+> angular-seed@0.0.0 start /home/pi/thermospi/www
+> http-server -p 8000 -c-1
+
+[33mStarting up http-server, serving [39m[36m./[39m[33m on port: [39m[36m8000[39m
+Hit CTRL-C to stop the server
+[Tue, 20 Oct 2015 11:26:00 GMT] "[36mGET[39m [36m/[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:26:04 GMT] "[36mGET[39m [36m/app/[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:26:05 GMT] "[36mGET[39m [36m/favicon.ico[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:26:06 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/normalize.css[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:26:06 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/main.css[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:26:06 GMT] "[36mGET[39m [36m/app/bower_components/bootstrap/dist/css/bootstrap.min.css[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:26:06 GMT] "[36mGET[39m [36m/app/app.css[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:26:06 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:26:06 GMT] "[36mGET[39m [36m/app/bower_components/angular/angular.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:26:07 GMT] "[36mGET[39m [36m/app/bower_components/angular-ui-router/release/angular-ui-router.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:26:22 GMT] "[36mGET[39m [36m/app/common/common-services.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:26:23 GMT] "[36mGET[39m [36m/app/common/lodash-services.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:26:23 GMT] "[36mGET[39m [36m/app/bower_components/highcharts-ng/dist/highcharts-ng.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:26:35 GMT] "[36mGET[39m [36m/app/app.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:26:35 GMT] "[36mGET[39m [36m/app/bower_components/lodash/dist/lodash.compat.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:26:44 GMT] "[36mGET[39m [36m/app/bower_components/angular-resource/angular-resource.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:27:06 GMT] "[36mGET[39m [36m/app/stats/stats-controllers.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:32:40 GMT] "[36mGET[39m [36m/app/[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:32:40 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/normalize.css[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:32:40 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/main.css[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:32:40 GMT] "[36mGET[39m [36m/app/bower_components/bootstrap/dist/css/bootstrap.min.css[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:32:40 GMT] "[36mGET[39m [36m/app/app.css[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:32:40 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:32:40 GMT] "[36mGET[39m [36m/app/bower_components/angular/angular.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:32:40 GMT] "[36mGET[39m [36m/app/bower_components/angular-ui-router/release/angular-ui-router.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:32:40 GMT] "[36mGET[39m [36m/app/bower_components/angular-resource/angular-resource.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:32:40 GMT] "[36mGET[39m [36m/app/bower_components/highcharts-ng/dist/highcharts-ng.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:32:40 GMT] "[36mGET[39m [36m/app/bower_components/lodash/dist/lodash.compat.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:32:40 GMT] "[36mGET[39m [36m/app/app.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:32:40 GMT] "[36mGET[39m [36m/app/common/common-services.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:32:40 GMT] "[36mGET[39m [36m/app/common/lodash-services.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:32:40 GMT] "[36mGET[39m [36m/app/stats/stats-controllers.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:32:46 GMT] "[36mGET[39m [36m/app/[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:32:46 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/normalize.css[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:32:46 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/main.css[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:32:46 GMT] "[36mGET[39m [36m/app/bower_components/bootstrap/dist/css/bootstrap.min.css[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:32:46 GMT] "[36mGET[39m [36m/app/app.css[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:32:46 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:32:46 GMT] "[36mGET[39m [36m/app/bower_components/angular/angular.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:32:46 GMT] "[36mGET[39m [36m/app/bower_components/angular-ui-router/release/angular-ui-router.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:32:47 GMT] "[36mGET[39m [36m/app/bower_components/angular-resource/angular-resource.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:32:47 GMT] "[36mGET[39m [36m/app/bower_components/highcharts-ng/dist/highcharts-ng.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:32:47 GMT] "[36mGET[39m [36m/app/bower_components/lodash/dist/lodash.compat.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:32:47 GMT] "[36mGET[39m [36m/app/app.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:32:47 GMT] "[36mGET[39m [36m/app/common/common-services.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:32:47 GMT] "[36mGET[39m [36m/app/common/lodash-services.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:32:47 GMT] "[36mGET[39m [36m/app/stats/stats-controllers.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:33:14 GMT] "[36mGET[39m [36m/app/[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:33:15 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/normalize.css[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:33:15 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/main.css[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:33:15 GMT] "[36mGET[39m [36m/app/bower_components/bootstrap/dist/css/bootstrap.min.css[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:33:15 GMT] "[36mGET[39m [36m/app/app.css[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:33:15 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:33:15 GMT] "[36mGET[39m [36m/app/bower_components/angular/angular.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:33:15 GMT] "[36mGET[39m [36m/app/bower_components/angular-ui-router/release/angular-ui-router.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:33:15 GMT] "[36mGET[39m [36m/app/bower_components/angular-resource/angular-resource.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:33:18 GMT] "[36mGET[39m [36m/app/bower_components/highcharts-ng/dist/highcharts-ng.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:33:22 GMT] "[36mGET[39m [36m/app/bower_components/lodash/dist/lodash.compat.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:33:27 GMT] "[36mGET[39m [36m/app/app.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:33:28 GMT] "[36mGET[39m [36m/app/common/common-services.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:33:28 GMT] "[36mGET[39m [36m/app/common/lodash-services.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
+[Tue, 20 Oct 2015 11:33:28 GMT] "[36mGET[39m [36m/app/stats/stats-controllers.js[39m" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"

@@ -5,14 +5,13 @@ updateGPIO() {
    gpio mode $GPIO_THERMOSTAT out
    gpio write $GPIO_THERMOSTAT $1
    NOUVEL_ETAT=$(traduireEtatVersAffichage $1)
-   echo "Etat thermostat -> "$NOUVEL_ETAT
+   echo "Nouvelle consigne thermostat -> "$NOUVEL_ETAT
 }
 
 updateThermostat() {
    # On recupere la derniere consigne de niveau thermostat
    ETAT_COURANT_THERMOSTAT=$(mysql -u $DB_USER -p$DB_PASSWORD -se 'SELECT s.status FROM temperatures.`status` s WHERE s.date < NOW() AND s.priority = '$THERMOSTAT_LEVEL' ORDER BY s.date DESC LIMIT 1' $DB_NAME)
-   ETAT_COURANT_THERMOSTAT_AFFICHE=$(traduireEtatVersAffichage $ETAT_COURANT_THERMOSTAT)
-   echo "Etat courant thermostat              (priorite="$THERMOSTAT_LEVEL") -> "$ETAT_COURANT_THERMOSTAT_AFFICHAGE
+   afficherConsignePourNiveau "thermostat" $THERMOSTAT_LEVEL $(traduireEtatVersAffichage $ETAT_COURANT_THERMOSTAT)
 
    # On met a jour la sortie GPIO en fonction de l'etat voulu
    updateGPIO $1
@@ -39,14 +38,17 @@ traduireEtatVersAffichage() {
    fi
 }
 
+afficherConsignePourNiveau() {
+   echo "Consigne "$1" (priorite="$2") -> "$3
+}
+
 # On recupere la consigne de chauffage courante
 CONSIGNE_TEMPERATURE=$(mysql -u $DB_USER -p$DB_PASSWORD -se 'SELECT s.value FROM setpoints s WHERE s.date < NOW() ORDER BY s.date DESC LIMIT 1' $DB_NAME)
 echo "Consigne de temperature -> "$CONSIGNE_TEMPERATURE"°C"
 
 # On recupere la derniere consigne de niveau utilisateur
 DERNIERE_CONSIGNE_NIVEAU_UTILISATEUR=$(mysql -u $DB_USER -p$DB_PASSWORD -se 'SELECT s.status FROM temperatures.`status` s WHERE s.date < NOW() AND s.priority = '$USER_LEVEL' ORDER BY s.date DESC LIMIT 1' $DB_NAME)
-DERNIERE_CONSIGNE_NIVEAU_UTILISATEUR_AFFICHEE=$(traduireEtatVersAffichage $DERNIERE_CONSIGNE_NIVEAU_UTILISATEUR)
-echo "Derniere consigne niveau utilisateur (priorite="$USER_LEVEL") -> "$DERNIERE_CONSIGNE_NIVEAU_UTILISATEUR_AFFICHEE
+afficherConsignePourNiveau "utilisateur" $USER_LEVEL $(traduireEtatVersAffichage $DERNIERE_CONSIGNE_NIVEAU_UTILISATEUR)
 
 # Si chauffage mode AUTO
 if [ "$DERNIERE_CONSIGNE_NIVEAU_UTILISATEUR" == "NULL" ]
@@ -54,8 +56,7 @@ then
 
    # On recupere la derniere consigne de niveau systeme
    DERNIERE_CONSIGNE_NIVEAU_SYSTEME=$(mysql -u $DB_USER -p$DB_PASSWORD -se 'SELECT s.status FROM temperatures.`status` s WHERE s.date < NOW() AND s.priority = '$SYSTEM_LEVEL' ORDER BY s.date DESC LIMIT 1' $DB_NAME)
-   DERNIERE_CONSIGNE_NIVEAU_SYSTEME_AFFICHEE=$(traduireEtatVersAffichage $DERNIERE_CONSIGNE_NIVEAU_SYSTEME)
-   echo "Derniere consigne niveau systeme     (priorite="$SYSTEM_LEVEL") -> "$DERNIERE_CONSIGNE_NIVEAU_SYSTEME_AFFICHEE
+   afficherConsignePourNiveau "systeme" $SYSTEM_LEVEL $(traduireEtatVersAffichage $DERNIERE_CONSIGNE_NIVEAU_SYSTEME)
 
    # Si qq'un est present dans la maison
    if [ "$DERNIERE_CONSIGNE_NIVEAU_SYSTEME" == 1 ]
