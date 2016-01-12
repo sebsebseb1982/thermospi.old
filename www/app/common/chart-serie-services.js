@@ -115,8 +115,7 @@ angular
                                 },
                                 verticalAlign: 'middle',
                                 rotation: -90
-                            },
-                            zIndex:0
+                            }
                         }
                     };
 
@@ -158,8 +157,7 @@ angular
                                 color: '#FBFFD4'
                             },
                             verticalAlign: 'middle'
-                        },
-                        zIndex:2
+                        }
                     }
                 };
 
