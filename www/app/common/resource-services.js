@@ -67,9 +67,8 @@ angular
         [
             '$resource',
             function ($resource) {
-
                 return {
-                    sunrise: $resource("http://api.sunrise-sunset.org/json?lat=36.7201600&lng=-4.4203400&formatted=0", null,
+                    sunrise: $resource("http://api.sunrise-sunset.org/json?lat=44.806054&lng=-0.5853062&formatted=0", null,
                         {
                             get: {
                                 method: 'GET',
