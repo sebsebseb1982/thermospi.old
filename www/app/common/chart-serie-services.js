@@ -116,7 +116,7 @@ angular
                                 verticalAlign: 'middle',
                                 rotation: -90
                             },
-                            zIndex: 0
+                            zIndex: 2
                         }
                     };
 
@@ -166,7 +166,7 @@ angular
                 });*/
 
                 plotLines.push({
-                    color: '#ffffcc',
+                    color: 'rgba(255, 255, 204, 0.1)',
                     /*dashStyle: 'longdashdot',
                     value: Date.parse(sunriseDetails.results.sunset),
                     width: 2,*/
@@ -180,7 +180,7 @@ angular
                         verticalAlign: 'middle',
                         rotation: -90
                     },
-                    zIndex: 2
+                    zIndex: 0
                 });
 
                 return plotLines;
