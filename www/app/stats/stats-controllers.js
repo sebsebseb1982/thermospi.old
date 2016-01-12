@@ -15,8 +15,9 @@ angular
             '$q',
             'temperatureResources',
             'temperatureSeries',
+            'averageTemperatureSeries',
             'statusSeries',
-            function ($scope, $q, temperatureResources, temperatureSeries, statusSeries) {
+            function ($scope, $q, temperatureResources, temperatureSeries, averageTemperatureSeries, statusSeries) {
 
                 $q.all([
                     temperatureResources.records.get().$promise,
@@ -93,7 +94,7 @@ angular
                         },
                         useHighStocks: false,
                         size: {
-                            height: 500
+                            height: 300
                         },
                         func: function (chart) {
                         }
