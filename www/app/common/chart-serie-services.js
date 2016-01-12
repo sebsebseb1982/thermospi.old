@@ -71,7 +71,7 @@ angular
                         'color': '#FF4040',
                         'type': 'line',
                         'data': _.map(inside, function (record) {
-                            return [Date.parse(record.date), record.value];
+                            return [Date.parse(record.date), record.avg];
                         })
                     };
 
@@ -82,7 +82,7 @@ angular
                         'color': '#FF4040',
                         'type': 'column',
                         'data': _.map(outside, function (record) {
-                            return [Date.parse(record.date), record.value];
+                            return [Date.parse(record.date), record.avg];
                         })
                     };
 
