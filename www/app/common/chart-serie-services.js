@@ -166,7 +166,7 @@ angular
                 });*/
 
                 plotLines.push({
-                    color: 'rgba(255, 255, 204, 0.1)',
+                    color: 'rgba(255, 255, 204, 0.5)',
                     /*dashStyle: 'longdashdot',
                     value: Date.parse(sunriseDetails.results.sunset),
                     width: 2,*/
