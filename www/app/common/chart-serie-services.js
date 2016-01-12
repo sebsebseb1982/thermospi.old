@@ -65,7 +65,7 @@ angular
             }
         ]
     )
-    .factory(
+    .service(
         'statusSeries',
         [
             'temperatureResources',
