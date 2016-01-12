@@ -64,6 +64,41 @@ angular
                         }
                     };
                 });
+
+                $q.all([
+                    temperatureResources.averageInside.get().$promise,
+                    temperatureResources.averageOutside.get().$promise
+                ]).then(function (data) {
+
+                    $scope.averageTermperaturesConfig = {
+                        options: {
+                            chart: {
+                                type: 'spline'
+                            },
+                            tooltip: {
+                                style: {
+                                    padding: 10,
+                                    fontWeight: 'bold'
+                                }
+                            }
+                        },
+
+                        series: averageTemperatureSeries.get(data[0], data[1]),
+                        title: {
+                            text: 'Moyenne mensuelle'
+                        },
+                        loading: false,
+                        xAxis: {
+                            type: 'datetime'
+                        },
+                        useHighStocks: false,
+                        size: {
+                            height: 500
+                        },
+                        func: function (chart) {
+                        }
+                    };
+                });
             }
         ]
     );

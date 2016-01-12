@@ -42,6 +42,20 @@ angular
                             method: 'GET',
                             isArray: true
                         }
+                    }),
+                averageInside: $resource("http://192.168.1.50:3000/api/records/avg/inside", null,
+                    {
+                        get: {
+                            method: 'GET',
+                            isArray: true
+                        }
+                    }),
+                averageOutside: $resource("http://192.168.1.50:3000/api/records/avg/outside", null,
+                    {
+                        get: {
+                            method: 'GET',
+                            isArray: true
+                        }
                     })
             }
         }

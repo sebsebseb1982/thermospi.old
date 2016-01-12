@@ -6,9 +6,8 @@ angular
     .factory(
         'temperatureSeries',
         [
-            '$q',
             '_',
-            function ($q, _) {
+            function (_) {
                 var get = function (records, sensors, setpoints) {
                     var series = [];
 
@@ -50,7 +49,44 @@ angular
 
                     series.push(setPointsSerie);
 
-                    console.log('series', series);
+                    return series;
+                };
+
+                return {
+                    get: get
+                }
+            }
+        ]
+    )
+    .factory(
+        'averageTemperatureSeries',
+        [
+            '_',
+            function (_) {
+                var get = function (inside, outside) {
+                    var series = [];
+
+                    var insideSerie = {
+                        'name': 'Intérieur',
+                        'color': '#FF4040',
+                        'type': 'line',
+                        'data': _.map(inside, function (record) {
+                            return [Date.parse(record.date), record.value];
+                        })
+                    };
+
+                    series.push(insideSerie);
+
+                    var outsideSerie = {
+                        'name': 'Extérieur',
+                        'color': '#FF4040',
+                        'type': 'column',
+                        'data': _.map(outside, function (record) {
+                            return [Date.parse(record.date), record.value];
+                        })
+                    };
+
+                    series.push(outsideSerie);
 
                     return series;
                 };
