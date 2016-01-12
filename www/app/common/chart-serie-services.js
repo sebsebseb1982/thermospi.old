@@ -107,7 +107,7 @@ angular
                         return {
                             from: from,
                             to: to,
-                            color: 'rgba(255, 0, 0, 0.1)',
+                            color: '#ffb3b3',
                             label: {
                                 text: Math.floor((Math.abs(to - from) / 1000) / 60) + ' min.',
                                 style: {
@@ -166,7 +166,7 @@ angular
                 });*/
 
                 plotLines.push({
-                    color: 'rgba(255, 255, 204, 0.5)',
+                    color: 'rgba(255, 255, 204, 0.8)',
                     /*dashStyle: 'longdashdot',
                     value: Date.parse(sunriseDetails.results.sunset),
                     width: 2,*/
