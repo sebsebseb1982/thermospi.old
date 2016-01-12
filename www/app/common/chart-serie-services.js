@@ -157,7 +157,8 @@ angular
                                 color: '#FBFFD4'
                             },
                             verticalAlign: 'middle'
-                        }
+                        },
+                        zIndex:0
                     }
                 };
 
