@@ -4,7 +4,7 @@ angular
     ['ngResource']
 )
     .factory(
-    'myResources', [
+    'temperatureResources', [
         '$resource',
         function ($resource) {
 

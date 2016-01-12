@@ -1,12 +1,12 @@
 angular
     .module(
         'chartServices',
-        ['resourceService']
+        ['resourceServices']
     )
     .factory(
         'temperatureChart',
         [
-            '$resource',
+            'temperatureResources',
             function ($resource) {
             }
         ]
