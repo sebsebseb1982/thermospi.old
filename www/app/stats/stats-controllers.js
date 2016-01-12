@@ -1,5 +1,5 @@
 angular
-    .module('statsControllers', ['resourceServices', 'highcharts-ng', 'lodash'])
+    .module('statsControllers', ['chartSerieServices', 'highcharts-ng', 'lodash'])
     .controller(
         'sumupStatsCtrl',
         [
