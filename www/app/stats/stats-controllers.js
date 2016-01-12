@@ -11,6 +11,7 @@ angular
     .controller(
         'contentStatsCtrl',
         [
+            '_',
             '$scope',
             '$q',
             'temperatureResources',
@@ -19,7 +20,7 @@ angular
             'statusSeries',
             'sunriseResources',
             'sunriseSerie',
-            function ($scope, $q, temperatureResources, temperatureSeries, averageTemperatureSeries, statusSeries, sunriseResources, sunriseSerie) {
+            function (_, $scope, $q, temperatureResources, temperatureSeries, averageTemperatureSeries, statusSeries, sunriseResources, sunriseSerie) {
 
                 $q.all([
                     temperatureResources.records.get().$promise,
@@ -49,8 +50,7 @@ angular
                         loading: false,
                         xAxis: {
                             type: 'datetime',
-                            plotBands: statusSeries.get(data[3]),
-                            plotLines: sunriseSerie.get(data[4])
+                            plotBands: _.union(statusSeries.get(data[3]), sunriseSerie.get(data[4]))
                         },
                         useHighStocks: false,
                         size: {

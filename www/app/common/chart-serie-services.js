@@ -149,7 +149,7 @@ angular
 
                 var plotLines = [];
 
-                plotLines.push({
+                /*plotLines.push({
                     color: 'red',
                     dashStyle: 'longdashdot',
                     value: Date.parse(sunriseDetails.results.sunrise),
@@ -162,15 +162,17 @@ angular
                         verticalAlign: 'middle',
                         rotation: -90
                     }
-                });
+                });*/
 
                 plotLines.push({
                     color: 'red',
-                    dashStyle: 'longdashdot',
+                    /*dashStyle: 'longdashdot',
                     value: Date.parse(sunriseDetails.results.sunset),
-                    width: 2,
+                    width: 2,*/
+                    from:Date.parse(sunriseDetails.results.sunrise),
+                    to:Date.parse(sunriseDetails.results.sunset),
                     label: {
-                        text: "Coucher du soleil",
+                        text: "Jour",
                         style: {
                             color: '#606060'
                         },
