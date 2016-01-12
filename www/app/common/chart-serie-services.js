@@ -139,4 +139,33 @@ angular
                 }
             }
         ]
-    );
+    )
+    .service(
+    'sunriseSerie',
+    [
+        '_',
+        function (_) {
+            this.get = function (sunriseDetails) {
+                var getAPlotBand = function (from, to) {
+                    return {
+                        from: from,
+                        to: to,
+                        color: 'rgba(255, 0, 0, 0.1)',
+                        label: {
+                            text: "Jour",
+                            style: {
+                                color: '#FBFFD4'
+                            },
+                            verticalAlign: 'middle'
+                        }
+                    }
+                };
+
+                console.log("sunrise", Date.parse(sunriseDetails.results.sunrise));
+                console.log("sunset", Date.parse(sunriseDetails.results.sunset));
+
+                return getAPlotBand(Date.parse(sunriseDetails.results.sunrise), Date.parse(sunriseDetails.results.sunset));
+            }
+        }
+    ]
+);

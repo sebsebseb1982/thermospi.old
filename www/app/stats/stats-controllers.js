@@ -17,13 +17,16 @@ angular
             'temperatureSeries',
             'averageTemperatureSeries',
             'statusSeries',
-            function ($scope, $q, temperatureResources, temperatureSeries, averageTemperatureSeries, statusSeries) {
+            'sunriseResources',
+            'sunriseSerie',
+            function ($scope, $q, temperatureResources, temperatureSeries, averageTemperatureSeries, statusSeries, sunriseResources, sunriseSerie) {
 
                 $q.all([
                     temperatureResources.records.get().$promise,
                     temperatureResources.sensors.get().$promise,
                     temperatureResources.setpoints.get().$promise,
-                    temperatureResources.status.get().$promise
+                    temperatureResources.status.get().$promise,
+                    sunriseResources.sunrise.get().$promise
                 ]).then(function (data) {
 
                     $scope.termperaturesConfig = {
@@ -46,7 +49,7 @@ angular
                         loading: false,
                         xAxis: {
                             type: 'datetime',
-                            plotBands: statusSeries.get(data[3])
+                            plotBands: [statusSeries.get(data[3]), sunriseSerie.get(data[4])]
                         },
                         useHighStocks: false,
                         size: {
