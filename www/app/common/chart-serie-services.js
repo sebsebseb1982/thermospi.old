@@ -146,25 +146,40 @@ angular
         '_',
         function (_) {
             this.get = function (sunriseDetails) {
-                var getAPlotBand = function (from, to) {
-                    return {
-                        from: from,
-                        to: to,
-                        color: 'rgba(255, 0, 0, 0.1)',
-                        label: {
-                            text: "Jour",
-                            style: {
-                                color: '#FBFFD4'
-                            },
-                            verticalAlign: 'middle'
-                        }
+
+                var plotLines = [];
+
+                plotLines.push({
+                    color: 'red',
+                    dashStyle: 'longdashdot',
+                    value: Date.parse(sunriseDetails.results.sunrise),
+                    width: 2,
+                    label: {
+                        text: "Aurore",
+                        style: {
+                            color: '#606060'
+                        },
+                        verticalAlign: 'middle',
+                        rotation: -90
                     }
-                };
+                });
 
-                console.log("sunrise", Date.parse(sunriseDetails.results.sunrise));
-                console.log("sunset", Date.parse(sunriseDetails.results.sunset));
+                plotLines.push({
+                    color: 'red',
+                    dashStyle: 'longdashdot',
+                    value: Date.parse(sunriseDetails.results.sunset),
+                    width: 2,
+                    label: {
+                        text: "Coucher du soleil",
+                        style: {
+                            color: '#606060'
+                        },
+                        verticalAlign: 'middle',
+                        rotation: -90
+                    }
+                });
 
-                return getAPlotBand(Date.parse(sunriseDetails.results.sunrise), Date.parse(sunriseDetails.results.sunset));
+                return plotLines;
             }
         }
     ]

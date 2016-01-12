@@ -49,7 +49,8 @@ angular
                         loading: false,
                         xAxis: {
                             type: 'datetime',
-                            plotBands: [statusSeries.get(data[3]), sunriseSerie.get(data[4])]
+                            plotBands: [statusSeries.get(data[3])],
+                            plotLines: [sunriseSerie.get(data[4])]
                         },
                         useHighStocks: false,
                         size: {
