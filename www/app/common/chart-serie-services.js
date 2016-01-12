@@ -59,6 +59,8 @@ angular
 
                         series.push(setPointsSerie);
 
+                        console.log('series', series);
+
                         return series;
                     });
                 };
