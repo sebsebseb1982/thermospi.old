@@ -68,7 +68,7 @@ angular
 
                     var insideSerie = {
                         'name': 'Intérieur',
-                        'color': '#FF4040',
+                        'color': '#90ED7D',
                         'type': 'line',
                         'data': _.map(inside, function (record) {
                             return [Date.parse(record.date), record.avg];
@@ -79,7 +79,7 @@ angular
 
                     var outsideSerie = {
                         'name': 'Extérieur',
-                        'color': '#FF4040',
+                        'color': '#7CB5EC',
                         'type': 'column',
                         'data': _.map(outside, function (record) {
                             return [Date.parse(record.date), record.avg];

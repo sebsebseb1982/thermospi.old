@@ -73,7 +73,7 @@ router
 router
     .route('/records/avg/inside')
     .get(function(req,res){
-        querySQL(req,res,'SELECT date, AVG(`value`) AS avg FROM records WHERE sensorId=2 OR sensorId=3 GROUP BY YEAR(`date`), MONTH(`date`)');
+        querySQL(req,res,'SELECT date, AVG(`value`) AS avg FROM records WHERE sensorId=2 OR sensorId=3 GROUP BY YEAR(`date`), MONTH(`date`) HAVING COUNT(`date`)');
     });
 
 router
