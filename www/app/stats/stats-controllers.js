@@ -12,10 +12,11 @@ angular
         'contentStatsCtrl',
         [
             '$scope',
+            '$q',
             'temperatureResources',
             'temperatureSeries',
             'statusSeries',
-            function ($scope, temperatureResources, temperatureSeries, statusSeries) {
+            function ($scope, $q, temperatureResources, temperatureSeries, statusSeries) {
 
                 $q.all([
                     temperatureResources.records.get().$promise,
