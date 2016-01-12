@@ -6,7 +6,8 @@ angular.module(
 	[
 		'ui.router',
 		'statsControllers',
-		'commonServices'
+		'chartServices',
+		'resourceServices'
 	]
 )
 .config(

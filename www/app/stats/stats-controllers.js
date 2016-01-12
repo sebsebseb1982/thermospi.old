@@ -33,9 +33,7 @@ angular
 						'value' : setpoints[setpoints.length - 1].value,
 						'date' : new Date()
 					};
-					console.log('A', setpoints);
 					setpoints.push(finalSetPoint);
-					console.log('B', setpoints);
 
 					var series = [];
 					
@@ -107,13 +105,11 @@ angular
 								}
 							},
 							
-							//The below properties are watched separately for changes.
-							
 							//Series object (optional) - a list of series using normal highcharts series options.
 							series: series,
 							//Title configuration (optional)
 							title: {
-								text: 'Hello'
+								text: 'Températures'
 							},
 							//Boolean to control showng loading status on chart (optional)
 							loading: false,

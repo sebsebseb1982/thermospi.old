@@ -1,6 +1,6 @@
 angular
     .module(
-    'commonServices',
+    'resourceServices',
     ['ngResource']
 )
     .factory(
