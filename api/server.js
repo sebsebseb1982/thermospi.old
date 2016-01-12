@@ -73,7 +73,7 @@ router
 router
     .route('/status')
     .get(function(req,res){
-        querySQL(req,res,'SELECT * FROM status WHERE date >= ( CURDATE() - INTERVAL ' + daysOfHistory + ' DAY )');
+        querySQL(req,res,'SELECT * FROM realstatus WHERE date >= ( CURDATE() - INTERVAL ' + daysOfHistory + ' DAY )');
     });
 
 router

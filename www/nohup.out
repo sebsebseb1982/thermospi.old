@@ -2468,3 +2468,806 @@ Hit CTRL-C to stop the server
 [Tue, 12 Jan 2016 09:41:47 GMT] "[36mGET[39m [36m/app/stats/stats-controllers.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
 [Tue, 12 Jan 2016 09:41:47 GMT] "[36mGET[39m [36m/app/stats/partials/sumup.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
 [Tue, 12 Jan 2016 09:41:47 GMT] "[36mGET[39m [36m/app/stats/partials/content.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 09:59:54 GMT] "[36mGET[39m [36m/app/[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 09:59:54 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/normalize.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 09:59:54 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/main.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 09:59:54 GMT] "[36mGET[39m [36m/app/bower_components/bootstrap/dist/css/bootstrap.min.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 09:59:54 GMT] "[36mGET[39m [36m/app/app.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 09:59:54 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 09:59:55 GMT] "[36mGET[39m [36m/app/bower_components/angular/angular.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 09:59:55 GMT] "[36mGET[39m [36m/app/bower_components/angular-ui-router/release/angular-ui-router.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 09:59:55 GMT] "[36mGET[39m [36m/app/bower_components/angular-resource/angular-resource.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 09:59:55 GMT] "[36mGET[39m [36m/app/bower_components/highcharts-ng/dist/highcharts-ng.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 09:59:55 GMT] "[36mGET[39m [36m/app/bower_components/lodash/dist/lodash.compat.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 09:59:55 GMT] "[36mGET[39m [36m/app/app.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 09:59:55 GMT] "[36mGET[39m [36m/app/common/common-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 09:59:55 GMT] "[36mGET[39m [36m/app/common/lodash-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 09:59:55 GMT] "[36mGET[39m [36m/app/stats/stats-controllers.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 09:59:55 GMT] "[36mGET[39m [36m/app/stats/partials/sumup.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 09:59:55 GMT] "[36mGET[39m [36m/app/stats/partials/content.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:12:59 GMT] "[36mGET[39m [36m/app/[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:12:59 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/normalize.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:12:59 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/main.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:12:59 GMT] "[36mGET[39m [36m/app/bower_components/bootstrap/dist/css/bootstrap.min.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:12:59 GMT] "[36mGET[39m [36m/app/app.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:12:59 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:12:59 GMT] "[36mGET[39m [36m/app/bower_components/angular/angular.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:12:59 GMT] "[36mGET[39m [36m/app/bower_components/angular-ui-router/release/angular-ui-router.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:12:59 GMT] "[36mGET[39m [36m/app/bower_components/angular-resource/angular-resource.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:12:59 GMT] "[36mGET[39m [36m/app/bower_components/highcharts-ng/dist/highcharts-ng.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:12:59 GMT] "[36mGET[39m [36m/app/bower_components/lodash/dist/lodash.compat.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:12:59 GMT] "[36mGET[39m [36m/app/app.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:12:59 GMT] "[36mGET[39m [36m/app/common/common-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:12:59 GMT] "[36mGET[39m [36m/app/common/lodash-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:12:59 GMT] "[36mGET[39m [36m/app/stats/stats-controllers.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:12:59 GMT] "[36mGET[39m [36m/app/stats/partials/sumup.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:12:59 GMT] "[36mGET[39m [36m/app/stats/partials/content.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[31mhttp-server stopped.[39m
+
+> angular-seed@0.0.0 prestart /home/pi/thermospi/www
+> npm install
+
+npm WARN package.json karma-chrome-launcher@0.1.5 No README data
+npm WARN package.json karma-phantomjs-launcher@0.1.4 No README data
+
+> angular-seed@0.0.0 postinstall /home/pi/thermospi/www
+> bower install
+
+
+> angular-seed@0.0.0 start /home/pi/thermospi/www
+> http-server -p 8000 -c-1
+
+[33mStarting up http-server, serving [39m[36m./[39m[33m on port: [39m[36m8000[39m
+Hit CTRL-C to stop the server
+[Tue, 12 Jan 2016 11:41:23 GMT] "[36mGET[39m [36m/app/[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:23 GMT] "[36mGET[39m [36m/app/common/resource-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:23 GMT] "[36mGET[39m [36m/app/common/chart-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:23 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/normalize.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:23 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/main.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:23 GMT] "[36mGET[39m [36m/app/bower_components/bootstrap/dist/css/bootstrap.min.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:23 GMT] "[36mGET[39m [36m/app/app.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:23 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:23 GMT] "[36mGET[39m [36m/app/bower_components/angular/angular.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:23 GMT] "[36mGET[39m [36m/app/bower_components/angular-ui-router/release/angular-ui-router.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:24 GMT] "[36mGET[39m [36m/app/bower_components/angular-resource/angular-resource.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:24 GMT] "[36mGET[39m [36m/app/bower_components/highcharts-ng/dist/highcharts-ng.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:24 GMT] "[36mGET[39m [36m/app/bower_components/lodash/dist/lodash.compat.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:24 GMT] "[36mGET[39m [36m/app/app.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:24 GMT] "[36mGET[39m [36m/app/common/lodash-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:24 GMT] "[36mGET[39m [36m/app/stats/stats-controllers.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:39 GMT] "[36mGET[39m [36m/app/[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:39 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/normalize.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:39 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/main.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:39 GMT] "[36mGET[39m [36m/app/bower_components/bootstrap/dist/css/bootstrap.min.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:39 GMT] "[36mGET[39m [36m/app/app.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:39 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:39 GMT] "[36mGET[39m [36m/app/bower_components/angular/angular.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:39 GMT] "[36mGET[39m [36m/app/bower_components/angular-ui-router/release/angular-ui-router.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:39 GMT] "[36mGET[39m [36m/app/bower_components/angular-resource/angular-resource.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:39 GMT] "[36mGET[39m [36m/app/bower_components/highcharts-ng/dist/highcharts-ng.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:39 GMT] "[36mGET[39m [36m/app/bower_components/lodash/dist/lodash.compat.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:39 GMT] "[36mGET[39m [36m/app/app.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:39 GMT] "[36mGET[39m [36m/app/common/resource-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:39 GMT] "[36mGET[39m [36m/app/common/chart-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:39 GMT] "[36mGET[39m [36m/app/common/lodash-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:39 GMT] "[36mGET[39m [36m/app/stats/stats-controllers.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:45 GMT] "[36mGET[39m [36m/app/[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:46 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/normalize.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:46 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/main.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:46 GMT] "[36mGET[39m [36m/app/bower_components/bootstrap/dist/css/bootstrap.min.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:46 GMT] "[36mGET[39m [36m/app/app.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:46 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:46 GMT] "[36mGET[39m [36m/app/bower_components/angular/angular.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:46 GMT] "[36mGET[39m [36m/app/bower_components/angular-resource/angular-resource.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:46 GMT] "[36mGET[39m [36m/app/bower_components/highcharts-ng/dist/highcharts-ng.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:46 GMT] "[36mGET[39m [36m/app/bower_components/lodash/dist/lodash.compat.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:46 GMT] "[36mGET[39m [36m/app/bower_components/angular-ui-router/release/angular-ui-router.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:46 GMT] "[36mGET[39m [36m/app/app.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:46 GMT] "[36mGET[39m [36m/app/common/resource-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:46 GMT] "[36mGET[39m [36m/app/common/chart-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:46 GMT] "[36mGET[39m [36m/app/common/lodash-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:41:46 GMT] "[36mGET[39m [36m/app/stats/stats-controllers.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[31mhttp-server stopped.[39m
+
+> angular-seed@0.0.0 prestart /home/pi/thermospi/www
+> npm install
+
+npm WARN package.json karma-chrome-launcher@0.1.5 No README data
+npm WARN package.json karma-phantomjs-launcher@0.1.4 No README data
+
+> angular-seed@0.0.0 postinstall /home/pi/thermospi/www
+> bower install
+
+
+> angular-seed@0.0.0 start /home/pi/thermospi/www
+> http-server -p 8000 -c-1
+
+[33mStarting up http-server, serving [39m[36m./[39m[33m on port: [39m[36m8000[39m
+Hit CTRL-C to stop the server
+[Tue, 12 Jan 2016 11:44:18 GMT] "[36mGET[39m [36m/app/[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:44:19 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/normalize.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:44:19 GMT] "[36mGET[39m [36m/app/bower_components/angular-ui-router/release/angular-ui-router.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:44:19 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/main.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:44:19 GMT] "[36mGET[39m [36m/app/bower_components/bootstrap/dist/css/bootstrap.min.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:44:19 GMT] "[36mGET[39m [36m/app/app.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:44:19 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:44:19 GMT] "[36mGET[39m [36m/app/bower_components/angular/angular.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:44:19 GMT] "[36mGET[39m [36m/app/bower_components/angular-resource/angular-resource.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:44:19 GMT] "[36mGET[39m [36m/app/bower_components/highcharts-ng/dist/highcharts-ng.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:44:19 GMT] "[36mGET[39m [36m/app/bower_components/lodash/dist/lodash.compat.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:44:19 GMT] "[36mGET[39m [36m/app/app.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:44:19 GMT] "[36mGET[39m [36m/app/common/resource-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:44:19 GMT] "[36mGET[39m [36m/app/common/chart-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:44:19 GMT] "[36mGET[39m [36m/app/common/lodash-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:44:19 GMT] "[36mGET[39m [36m/app/stats/stats-controllers.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[31mhttp-server stopped.[39m
+
+> angular-seed@0.0.0 prestart /home/pi/thermospi/www
+> npm install
+
+npm WARN package.json karma-chrome-launcher@0.1.5 No README data
+npm WARN package.json karma-phantomjs-launcher@0.1.4 No README data
+
+> angular-seed@0.0.0 postinstall /home/pi/thermospi/www
+> bower install
+
+
+> angular-seed@0.0.0 start /home/pi/thermospi/www
+> http-server -p 8000 -c-1
+
+[33mStarting up http-server, serving [39m[36m./[39m[33m on port: [39m[36m8000[39m
+Hit CTRL-C to stop the server
+[Tue, 12 Jan 2016 11:47:52 GMT] "[36mGET[39m [36m/app/[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:47:52 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/normalize.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:47:52 GMT] "[36mGET[39m [36m/app/bower_components/angular-ui-router/release/angular-ui-router.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:47:52 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/main.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:47:52 GMT] "[36mGET[39m [36m/app/bower_components/bootstrap/dist/css/bootstrap.min.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:47:52 GMT] "[36mGET[39m [36m/app/app.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:47:52 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:47:52 GMT] "[36mGET[39m [36m/app/bower_components/angular/angular.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:47:52 GMT] "[36mGET[39m [36m/app/bower_components/angular-resource/angular-resource.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:47:52 GMT] "[36mGET[39m [36m/app/bower_components/highcharts-ng/dist/highcharts-ng.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:47:52 GMT] "[36mGET[39m [36m/app/bower_components/lodash/dist/lodash.compat.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:47:52 GMT] "[36mGET[39m [36m/app/app.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:47:52 GMT] "[36mGET[39m [36m/app/common/resource-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:47:52 GMT] "[36mGET[39m [36m/app/common/chart-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:47:52 GMT] "[36mGET[39m [36m/app/common/lodash-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:47:52 GMT] "[36mGET[39m [36m/app/stats/stats-controllers.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:47:52 GMT] "[36mGET[39m [36m/app/stats/partials/sumup.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:47:52 GMT] "[36mGET[39m [36m/app/stats/partials/content.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[31mhttp-server stopped.[39m
+
+> angular-seed@0.0.0 prestart /home/pi/thermospi/www
+> npm install
+
+npm WARN package.json karma-chrome-launcher@0.1.5 No README data
+npm WARN package.json karma-phantomjs-launcher@0.1.4 No README data
+
+> angular-seed@0.0.0 postinstall /home/pi/thermospi/www
+> bower install
+
+
+> angular-seed@0.0.0 start /home/pi/thermospi/www
+> http-server -p 8000 -c-1
+
+[33mStarting up http-server, serving [39m[36m./[39m[33m on port: [39m[36m8000[39m
+Hit CTRL-C to stop the server
+[Tue, 12 Jan 2016 11:50:38 GMT] "[36mGET[39m [36m/app/[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:50:38 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/normalize.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:50:38 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/main.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:50:38 GMT] "[36mGET[39m [36m/app/bower_components/angular-ui-router/release/angular-ui-router.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:50:38 GMT] "[36mGET[39m [36m/app/bower_components/angular-resource/angular-resource.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:50:38 GMT] "[36mGET[39m [36m/app/bower_components/bootstrap/dist/css/bootstrap.min.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:50:38 GMT] "[36mGET[39m [36m/app/app.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:50:38 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:50:38 GMT] "[36mGET[39m [36m/app/bower_components/angular/angular.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:50:38 GMT] "[36mGET[39m [36m/app/bower_components/highcharts-ng/dist/highcharts-ng.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:50:38 GMT] "[36mGET[39m [36m/app/bower_components/lodash/dist/lodash.compat.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:50:38 GMT] "[36mGET[39m [36m/app/app.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:50:38 GMT] "[36mGET[39m [36m/app/common/resource-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:50:38 GMT] "[36mGET[39m [36m/app/common/chart-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:50:38 GMT] "[36mGET[39m [36m/app/common/lodash-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:50:38 GMT] "[36mGET[39m [36m/app/stats/stats-controllers.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:50:38 GMT] "[36mGET[39m [36m/app/stats/partials/sumup.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:50:38 GMT] "[36mGET[39m [36m/app/stats/partials/content.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[31mhttp-server stopped.[39m
+
+> angular-seed@0.0.0 prestart /home/pi/thermospi/www
+> npm install
+
+npm WARN package.json karma-chrome-launcher@0.1.5 No README data
+npm WARN package.json karma-phantomjs-launcher@0.1.4 No README data
+
+> angular-seed@0.0.0 postinstall /home/pi/thermospi/www
+> bower install
+
+
+> angular-seed@0.0.0 start /home/pi/thermospi/www
+> http-server -p 8000 -c-1
+
+[33mStarting up http-server, serving [39m[36m./[39m[33m on port: [39m[36m8000[39m
+Hit CTRL-C to stop the server
+[Tue, 12 Jan 2016 11:52:46 GMT] "[36mGET[39m [36m/app/[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:52:46 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/normalize.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:52:46 GMT] "[36mGET[39m [36m/app/bower_components/angular-ui-router/release/angular-ui-router.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:52:46 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/main.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:52:46 GMT] "[36mGET[39m [36m/app/bower_components/bootstrap/dist/css/bootstrap.min.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:52:46 GMT] "[36mGET[39m [36m/app/app.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:52:46 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:52:46 GMT] "[36mGET[39m [36m/app/bower_components/angular/angular.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:52:46 GMT] "[36mGET[39m [36m/app/bower_components/angular-resource/angular-resource.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:52:46 GMT] "[36mGET[39m [36m/app/bower_components/highcharts-ng/dist/highcharts-ng.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:52:46 GMT] "[36mGET[39m [36m/app/bower_components/lodash/dist/lodash.compat.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:52:46 GMT] "[36mGET[39m [36m/app/app.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:52:46 GMT] "[36mGET[39m [36m/app/common/resource-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:52:46 GMT] "[36mGET[39m [36m/app/common/chart-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:52:46 GMT] "[36mGET[39m [36m/app/common/lodash-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:52:46 GMT] "[36mGET[39m [36m/app/stats/stats-controllers.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:52:46 GMT] "[36mGET[39m [36m/app/stats/partials/sumup.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 11:52:46 GMT] "[36mGET[39m [36m/app/stats/partials/content.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[31mhttp-server stopped.[39m
+
+> angular-seed@0.0.0 prestart /home/pi/thermospi/www
+> npm install
+
+npm WARN package.json karma-chrome-launcher@0.1.5 No README data
+npm WARN package.json karma-phantomjs-launcher@0.1.4 No README data
+
+> angular-seed@0.0.0 postinstall /home/pi/thermospi/www
+> bower install
+
+
+> angular-seed@0.0.0 start /home/pi/thermospi/www
+> http-server -p 8000 -c-1
+
+[33mStarting up http-server, serving [39m[36m./[39m[33m on port: [39m[36m8000[39m
+Hit CTRL-C to stop the server
+[Tue, 12 Jan 2016 12:23:56 GMT] "[36mGET[39m [36m/app/[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:23:56 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/normalize.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:23:56 GMT] "[36mGET[39m [36m/app/bower_components/angular-ui-router/release/angular-ui-router.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:23:56 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/main.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:23:56 GMT] "[36mGET[39m [36m/app/bower_components/bootstrap/dist/css/bootstrap.min.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:23:56 GMT] "[36mGET[39m [36m/app/app.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:23:56 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:23:56 GMT] "[36mGET[39m [36m/app/bower_components/angular/angular.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:23:56 GMT] "[36mGET[39m [36m/app/bower_components/angular-resource/angular-resource.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:23:56 GMT] "[36mGET[39m [36m/app/bower_components/highcharts-ng/dist/highcharts-ng.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:23:56 GMT] "[36mGET[39m [36m/app/bower_components/lodash/dist/lodash.compat.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:23:56 GMT] "[36mGET[39m [36m/app/app.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:23:56 GMT] "[36mGET[39m [36m/app/common/chart-serie-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:23:56 GMT] "[36mGET[39m [36m/app/common/lodash-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:23:56 GMT] "[36mGET[39m [36m/app/common/resource-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:23:56 GMT] "[36mGET[39m [36m/app/stats/stats-controllers.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:23:56 GMT] "[36mGET[39m [36m/app/stats/partials/sumup.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:23:56 GMT] "[36mGET[39m [36m/app/stats/partials/content.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[31mhttp-server stopped.[39m
+
+> angular-seed@0.0.0 prestart /home/pi/thermospi/www
+> npm install
+
+npm WARN package.json karma-chrome-launcher@0.1.5 No README data
+npm WARN package.json karma-phantomjs-launcher@0.1.4 No README data
+
+> angular-seed@0.0.0 postinstall /home/pi/thermospi/www
+> bower install
+
+
+> angular-seed@0.0.0 start /home/pi/thermospi/www
+> http-server -p 8000 -c-1
+
+[33mStarting up http-server, serving [39m[36m./[39m[33m on port: [39m[36m8000[39m
+Hit CTRL-C to stop the server
+[Tue, 12 Jan 2016 12:29:21 GMT] "[36mGET[39m [36m/app/[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:29:21 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/normalize.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:29:22 GMT] "[36mGET[39m [36m/app/bower_components/angular-ui-router/release/angular-ui-router.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:29:22 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/main.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:29:22 GMT] "[36mGET[39m [36m/app/bower_components/bootstrap/dist/css/bootstrap.min.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:29:22 GMT] "[36mGET[39m [36m/app/app.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:29:22 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:29:22 GMT] "[36mGET[39m [36m/app/bower_components/angular/angular.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:29:22 GMT] "[36mGET[39m [36m/app/bower_components/angular-resource/angular-resource.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:29:22 GMT] "[36mGET[39m [36m/app/bower_components/highcharts-ng/dist/highcharts-ng.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:29:22 GMT] "[36mGET[39m [36m/app/bower_components/lodash/dist/lodash.compat.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:29:22 GMT] "[36mGET[39m [36m/app/common/lodash-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:29:22 GMT] "[36mGET[39m [36m/app/common/resource-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:29:22 GMT] "[36mGET[39m [36m/app/common/chart-serie-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:29:22 GMT] "[36mGET[39m [36m/app/stats/stats-controllers.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:29:22 GMT] "[36mGET[39m [36m/app/app.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:29:22 GMT] "[36mGET[39m [36m/app/stats/partials/sumup.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:29:22 GMT] "[36mGET[39m [36m/app/stats/partials/content.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[31mhttp-server stopped.[39m
+
+> angular-seed@0.0.0 prestart /home/pi/thermospi/www
+> npm install
+
+npm WARN package.json karma-chrome-launcher@0.1.5 No README data
+npm WARN package.json karma-phantomjs-launcher@0.1.4 No README data
+
+> angular-seed@0.0.0 postinstall /home/pi/thermospi/www
+> bower install
+
+
+> angular-seed@0.0.0 start /home/pi/thermospi/www
+> http-server -p 8000 -c-1
+
+[33mStarting up http-server, serving [39m[36m./[39m[33m on port: [39m[36m8000[39m
+Hit CTRL-C to stop the server
+[Tue, 12 Jan 2016 12:31:39 GMT] "[36mGET[39m [36m/app/[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:31:39 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/normalize.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:31:39 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/main.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:31:39 GMT] "[36mGET[39m [36m/app/bower_components/angular-ui-router/release/angular-ui-router.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:31:39 GMT] "[36mGET[39m [36m/app/bower_components/bootstrap/dist/css/bootstrap.min.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:31:39 GMT] "[36mGET[39m [36m/app/app.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:31:39 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:31:39 GMT] "[36mGET[39m [36m/app/bower_components/angular/angular.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:31:39 GMT] "[36mGET[39m [36m/app/bower_components/angular-resource/angular-resource.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:31:39 GMT] "[36mGET[39m [36m/app/bower_components/highcharts-ng/dist/highcharts-ng.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:31:39 GMT] "[36mGET[39m [36m/app/bower_components/lodash/dist/lodash.compat.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:31:39 GMT] "[36mGET[39m [36m/app/common/lodash-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:31:39 GMT] "[36mGET[39m [36m/app/common/resource-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:31:39 GMT] "[36mGET[39m [36m/app/common/chart-serie-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:31:39 GMT] "[36mGET[39m [36m/app/stats/stats-controllers.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:31:39 GMT] "[36mGET[39m [36m/app/app.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:31:39 GMT] "[36mGET[39m [36m/app/stats/partials/sumup.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:31:39 GMT] "[36mGET[39m [36m/app/stats/partials/content.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:31:45 GMT] "[36mGET[39m [36m/app/[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:31:45 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/normalize.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:31:45 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/main.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:31:45 GMT] "[36mGET[39m [36m/app/bower_components/bootstrap/dist/css/bootstrap.min.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:31:45 GMT] "[36mGET[39m [36m/app/app.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:31:45 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:31:45 GMT] "[36mGET[39m [36m/app/bower_components/angular/angular.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:31:46 GMT] "[36mGET[39m [36m/app/bower_components/angular-resource/angular-resource.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:31:46 GMT] "[36mGET[39m [36m/app/bower_components/highcharts-ng/dist/highcharts-ng.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:31:46 GMT] "[36mGET[39m [36m/app/bower_components/lodash/dist/lodash.compat.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:31:46 GMT] "[36mGET[39m [36m/app/bower_components/angular-ui-router/release/angular-ui-router.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:31:46 GMT] "[36mGET[39m [36m/app/common/lodash-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:31:46 GMT] "[36mGET[39m [36m/app/common/resource-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:31:46 GMT] "[36mGET[39m [36m/app/common/chart-serie-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:31:46 GMT] "[36mGET[39m [36m/app/stats/stats-controllers.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:31:46 GMT] "[36mGET[39m [36m/app/app.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:31:46 GMT] "[36mGET[39m [36m/app/stats/partials/sumup.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 12:31:46 GMT] "[36mGET[39m [36m/app/stats/partials/content.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 15:42:43 GMT] "[36mGET[39m [36m/app/[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 15:42:43 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/normalize.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 15:42:43 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/main.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 15:42:43 GMT] "[36mGET[39m [36m/app/bower_components/bootstrap/dist/css/bootstrap.min.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 15:42:43 GMT] "[36mGET[39m [36m/app/app.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 15:42:43 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 15:42:43 GMT] "[36mGET[39m [36m/app/bower_components/angular/angular.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 15:42:43 GMT] "[36mGET[39m [36m/app/bower_components/angular-ui-router/release/angular-ui-router.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 15:42:43 GMT] "[36mGET[39m [36m/app/bower_components/angular-resource/angular-resource.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 15:42:43 GMT] "[36mGET[39m [36m/app/bower_components/highcharts-ng/dist/highcharts-ng.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 15:42:43 GMT] "[36mGET[39m [36m/app/bower_components/lodash/dist/lodash.compat.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 15:42:43 GMT] "[36mGET[39m [36m/app/common/lodash-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 15:42:43 GMT] "[36mGET[39m [36m/app/common/resource-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 15:42:43 GMT] "[36mGET[39m [36m/app/common/chart-serie-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 15:42:43 GMT] "[36mGET[39m [36m/app/stats/stats-controllers.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 15:42:43 GMT] "[36mGET[39m [36m/app/app.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 15:42:43 GMT] "[36mGET[39m [36m/app/stats/partials/sumup.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 15:42:43 GMT] "[36mGET[39m [36m/app/stats/partials/content.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+
+> angular-seed@0.0.0 prestart /home/pi/thermospi/www
+> npm install
+
+npm WARN package.json karma-chrome-launcher@0.1.5 No README data
+npm WARN package.json karma-phantomjs-launcher@0.1.4 No README data
+
+> angular-seed@0.0.0 postinstall /home/pi/thermospi/www
+> bower install
+
+
+> angular-seed@0.0.0 start /home/pi/thermospi/www
+> http-server -p 8000 -c-1
+
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at net.js:1146:9
+    at dns.js:72:18
+    at process._tickCallback (node.js:419:13)
+    at Function.Module.runMain (module.js:499:11)
+    at startup (node.js:119:16)
+    at node.js:906:3
+
+npm ERR! angular-seed@0.0.0 start: `http-server -p 8000 -c-1`
+npm ERR! Exit status 8
+npm ERR! 
+npm ERR! Failed at the angular-seed@0.0.0 start script.
+npm ERR! This is most likely a problem with the angular-seed package,
+npm ERR! not with npm itself.
+npm ERR! Tell the author that this fails on your system:
+npm ERR!     http-server -p 8000 -c-1
+npm ERR! You can get their info via:
+npm ERR!     npm owner ls angular-seed
+npm ERR! There is likely additional logging output above.
+npm ERR! System Linux 3.12.28+
+npm ERR! command "/usr/local/bin/node" "/usr/local/bin/npm" "start"
+npm ERR! cwd /home/pi/thermospi/www
+npm ERR! node -v v0.10.33
+npm ERR! npm -v 1.4.28
+npm ERR! code ELIFECYCLE
+npm ERR! 
+npm ERR! Additional logging details can be found in:
+npm ERR!     /home/pi/thermospi/www/npm-debug.log
+npm ERR! not ok code 0
+[Tue, 12 Jan 2016 15:50:03 GMT] "[36mGET[39m [36m/app/[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 15:50:03 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/normalize.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 15:50:03 GMT] "[36mGET[39m [36m/app/bower_components/angular-ui-router/release/angular-ui-router.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 15:50:03 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/main.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 15:50:03 GMT] "[36mGET[39m [36m/app/bower_components/bootstrap/dist/css/bootstrap.min.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 15:50:03 GMT] "[36mGET[39m [36m/app/app.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 15:50:03 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 15:50:03 GMT] "[36mGET[39m [36m/app/bower_components/angular/angular.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 15:50:03 GMT] "[36mGET[39m [36m/app/bower_components/angular-resource/angular-resource.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 15:50:03 GMT] "[36mGET[39m [36m/app/bower_components/highcharts-ng/dist/highcharts-ng.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 15:50:03 GMT] "[36mGET[39m [36m/app/bower_components/lodash/dist/lodash.compat.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 15:50:03 GMT] "[36mGET[39m [36m/app/common/lodash-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 15:50:03 GMT] "[36mGET[39m [36m/app/common/resource-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 15:50:03 GMT] "[36mGET[39m [36m/app/common/chart-serie-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 15:50:03 GMT] "[36mGET[39m [36m/app/stats/stats-controllers.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 15:50:03 GMT] "[36mGET[39m [36m/app/app.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 15:50:03 GMT] "[36mGET[39m [36m/app/stats/partials/sumup.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 15:50:03 GMT] "[36mGET[39m [36m/app/stats/partials/content.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+
+> angular-seed@0.0.0 prestart /home/pi/thermospi/www
+> npm install
+
+npm WARN package.json karma-chrome-launcher@0.1.5 No README data
+npm WARN package.json karma-phantomjs-launcher@0.1.4 No README data
+
+> angular-seed@0.0.0 postinstall /home/pi/thermospi/www
+> bower install
+
+
+> angular-seed@0.0.0 start /home/pi/thermospi/www
+> http-server -p 8000 -c-1
+
+[33mStarting up http-server, serving [39m[36m./[39m[33m on port: [39m[36m8000[39m
+Hit CTRL-C to stop the server
+[Tue, 12 Jan 2016 16:00:17 GMT] "[36mGET[39m [36m/app/[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:00:18 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/normalize.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:00:18 GMT] "[36mGET[39m [36m/app/bower_components/angular-ui-router/release/angular-ui-router.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:00:18 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/main.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:00:18 GMT] "[36mGET[39m [36m/app/bower_components/bootstrap/dist/css/bootstrap.min.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:00:18 GMT] "[36mGET[39m [36m/app/app.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:00:18 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:00:18 GMT] "[36mGET[39m [36m/app/bower_components/angular/angular.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:00:18 GMT] "[36mGET[39m [36m/app/bower_components/angular-resource/angular-resource.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:00:18 GMT] "[36mGET[39m [36m/app/bower_components/highcharts-ng/dist/highcharts-ng.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:00:18 GMT] "[36mGET[39m [36m/app/bower_components/lodash/dist/lodash.compat.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:00:18 GMT] "[36mGET[39m [36m/app/common/lodash-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:00:18 GMT] "[36mGET[39m [36m/app/common/resource-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:00:18 GMT] "[36mGET[39m [36m/app/app.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:00:18 GMT] "[36mGET[39m [36m/app/common/chart-serie-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:00:18 GMT] "[36mGET[39m [36m/app/stats/stats-controllers.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:00:18 GMT] "[36mGET[39m [36m/app/stats/partials/sumup.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:00:18 GMT] "[36mGET[39m [36m/app/stats/partials/content.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[31mhttp-server stopped.[39m
+
+> angular-seed@0.0.0 prestart /home/pi/thermospi/www
+> npm install
+
+npm WARN package.json karma-chrome-launcher@0.1.5 No README data
+npm WARN package.json karma-phantomjs-launcher@0.1.4 No README data
+
+> angular-seed@0.0.0 postinstall /home/pi/thermospi/www
+> bower install
+
+
+> angular-seed@0.0.0 start /home/pi/thermospi/www
+> http-server -p 8000 -c-1
+
+[33mStarting up http-server, serving [39m[36m./[39m[33m on port: [39m[36m8000[39m
+Hit CTRL-C to stop the server
+[Tue, 12 Jan 2016 16:02:40 GMT] "[36mGET[39m [36m/app/[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:02:41 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/normalize.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:02:41 GMT] "[36mGET[39m [36m/app/bower_components/angular-ui-router/release/angular-ui-router.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:02:41 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/main.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:02:41 GMT] "[36mGET[39m [36m/app/bower_components/bootstrap/dist/css/bootstrap.min.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:02:41 GMT] "[36mGET[39m [36m/app/app.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:02:41 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:02:41 GMT] "[36mGET[39m [36m/app/bower_components/angular/angular.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:02:41 GMT] "[36mGET[39m [36m/app/bower_components/angular-resource/angular-resource.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:02:41 GMT] "[36mGET[39m [36m/app/bower_components/highcharts-ng/dist/highcharts-ng.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:02:41 GMT] "[36mGET[39m [36m/app/bower_components/lodash/dist/lodash.compat.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:02:41 GMT] "[36mGET[39m [36m/app/common/lodash-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:02:41 GMT] "[36mGET[39m [36m/app/common/resource-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:02:41 GMT] "[36mGET[39m [36m/app/common/chart-serie-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:02:41 GMT] "[36mGET[39m [36m/app/stats/stats-controllers.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:02:41 GMT] "[36mGET[39m [36m/app/app.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:02:41 GMT] "[36mGET[39m [36m/app/stats/partials/sumup.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:02:41 GMT] "[36mGET[39m [36m/app/stats/partials/content.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[31mhttp-server stopped.[39m
+
+> angular-seed@0.0.0 prestart /home/pi/thermospi/www
+> npm install
+
+npm WARN package.json karma-chrome-launcher@0.1.5 No README data
+npm WARN package.json karma-phantomjs-launcher@0.1.4 No README data
+
+> angular-seed@0.0.0 postinstall /home/pi/thermospi/www
+> bower install
+
+
+> angular-seed@0.0.0 start /home/pi/thermospi/www
+> http-server -p 8000 -c-1
+
+[33mStarting up http-server, serving [39m[36m./[39m[33m on port: [39m[36m8000[39m
+Hit CTRL-C to stop the server
+[Tue, 12 Jan 2016 16:05:19 GMT] "[36mGET[39m [36m/app/[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:05:20 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/normalize.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:05:20 GMT] "[36mGET[39m [36m/app/bower_components/angular-ui-router/release/angular-ui-router.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:05:20 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/main.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:05:20 GMT] "[36mGET[39m [36m/app/bower_components/bootstrap/dist/css/bootstrap.min.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:05:20 GMT] "[36mGET[39m [36m/app/app.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:05:20 GMT] "[36mGET[39m [36m/app/bower_components/angular/angular.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:05:20 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:05:20 GMT] "[36mGET[39m [36m/app/bower_components/angular-resource/angular-resource.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:05:20 GMT] "[36mGET[39m [36m/app/bower_components/highcharts-ng/dist/highcharts-ng.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:05:20 GMT] "[36mGET[39m [36m/app/bower_components/lodash/dist/lodash.compat.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:05:20 GMT] "[36mGET[39m [36m/app/common/lodash-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:05:20 GMT] "[36mGET[39m [36m/app/common/resource-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:05:20 GMT] "[36mGET[39m [36m/app/common/chart-serie-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:05:20 GMT] "[36mGET[39m [36m/app/stats/stats-controllers.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:05:20 GMT] "[36mGET[39m [36m/app/app.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:05:20 GMT] "[36mGET[39m [36m/app/stats/partials/sumup.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:05:20 GMT] "[36mGET[39m [36m/app/stats/partials/content.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[31mhttp-server stopped.[39m
+
+> angular-seed@0.0.0 prestart /home/pi/thermospi/www
+> npm install
+
+npm WARN package.json karma-chrome-launcher@0.1.5 No README data
+npm WARN package.json karma-phantomjs-launcher@0.1.4 No README data
+
+> angular-seed@0.0.0 postinstall /home/pi/thermospi/www
+> bower install
+
+
+> angular-seed@0.0.0 start /home/pi/thermospi/www
+> http-server -p 8000 -c-1
+
+[33mStarting up http-server, serving [39m[36m./[39m[33m on port: [39m[36m8000[39m
+Hit CTRL-C to stop the server
+[Tue, 12 Jan 2016 16:12:50 GMT] "[36mGET[39m [36m/app/[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:12:50 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/normalize.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:12:50 GMT] "[36mGET[39m [36m/app/bower_components/angular-ui-router/release/angular-ui-router.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:12:50 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/main.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:12:50 GMT] "[36mGET[39m [36m/app/bower_components/bootstrap/dist/css/bootstrap.min.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:12:50 GMT] "[36mGET[39m [36m/app/app.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:12:50 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:12:50 GMT] "[36mGET[39m [36m/app/bower_components/angular/angular.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:12:50 GMT] "[36mGET[39m [36m/app/bower_components/angular-resource/angular-resource.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:12:50 GMT] "[36mGET[39m [36m/app/bower_components/highcharts-ng/dist/highcharts-ng.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:12:50 GMT] "[36mGET[39m [36m/app/bower_components/lodash/dist/lodash.compat.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:12:50 GMT] "[36mGET[39m [36m/app/common/lodash-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:12:50 GMT] "[36mGET[39m [36m/app/common/resource-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:12:50 GMT] "[36mGET[39m [36m/app/stats/stats-controllers.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:12:50 GMT] "[36mGET[39m [36m/app/app.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:12:50 GMT] "[36mGET[39m [36m/app/common/chart-serie-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:12:50 GMT] "[36mGET[39m [36m/app/stats/partials/sumup.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:12:50 GMT] "[36mGET[39m [36m/app/stats/partials/content.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[31mhttp-server stopped.[39m
+
+> angular-seed@0.0.0 prestart /home/pi/thermospi/www
+> npm install
+
+npm WARN package.json karma-chrome-launcher@0.1.5 No README data
+npm WARN package.json karma-phantomjs-launcher@0.1.4 No README data
+
+> angular-seed@0.0.0 postinstall /home/pi/thermospi/www
+> bower install
+
+bower highcharts-ng#0.0.11  not-cached git://github.com/pablojim/highcharts-ng.git#0.0.11
+bower highcharts-ng#0.0.11     resolve git://github.com/pablojim/highcharts-ng.git#0.0.11
+bower highcharts-ng#0.0.11    download https://github.com/pablojim/highcharts-ng/archive/0.0.11.tar.gz
+bower highcharts-ng#0.0.11     extract archive.tar.gz
+bower highcharts-ng#0.0.11    resolved git://github.com/pablojim/highcharts-ng.git#0.0.11
+bower highcharts-ng#0.0.11     install highcharts-ng#0.0.11
+
+highcharts-ng#0.0.11 app/bower_components/highcharts-ng
+
+> angular-seed@0.0.0 start /home/pi/thermospi/www
+> http-server -p 8000 -c-1
+
+[33mStarting up http-server, serving [39m[36m./[39m[33m on port: [39m[36m8000[39m
+Hit CTRL-C to stop the server
+[Tue, 12 Jan 2016 16:24:43 GMT] "[36mGET[39m [36m/app/[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:24:43 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/normalize.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:24:43 GMT] "[36mGET[39m [36m/app/bower_components/angular-ui-router/release/angular-ui-router.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:24:43 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/main.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:24:43 GMT] "[36mGET[39m [36m/app/bower_components/bootstrap/dist/css/bootstrap.min.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:24:43 GMT] "[36mGET[39m [36m/app/app.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:24:43 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:24:43 GMT] "[36mGET[39m [36m/app/bower_components/angular/angular.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:24:43 GMT] "[36mGET[39m [36m/app/bower_components/angular-resource/angular-resource.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:24:43 GMT] "[36mGET[39m [36m/app/bower_components/highcharts-ng/dist/highcharts-ng.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:24:43 GMT] "[36mGET[39m [36m/app/bower_components/lodash/dist/lodash.compat.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:24:43 GMT] "[36mGET[39m [36m/app/common/lodash-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:24:43 GMT] "[36mGET[39m [36m/app/common/resource-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:24:43 GMT] "[36mGET[39m [36m/app/common/chart-serie-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:24:43 GMT] "[36mGET[39m [36m/app/app.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:24:43 GMT] "[36mGET[39m [36m/app/stats/stats-controllers.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:24:43 GMT] "[36mGET[39m [36m/app/stats/partials/sumup.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:24:43 GMT] "[36mGET[39m [36m/app/stats/partials/content.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[31mhttp-server stopped.[39m
+
+> angular-seed@0.0.0 prestart /home/pi/thermospi/www
+> npm install
+
+npm WARN package.json karma-chrome-launcher@0.1.5 No README data
+npm WARN package.json karma-phantomjs-launcher@0.1.4 No README data
+
+> angular-seed@0.0.0 postinstall /home/pi/thermospi/www
+> bower install
+
+
+> angular-seed@0.0.0 start /home/pi/thermospi/www
+> http-server -p 8000 -c-1
+
+[33mStarting up http-server, serving [39m[36m./[39m[33m on port: [39m[36m8000[39m
+Hit CTRL-C to stop the server
+[Tue, 12 Jan 2016 16:42:54 GMT] "[36mGET[39m [36m/app/[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:42:54 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/normalize.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:42:54 GMT] "[36mGET[39m [36m/app/bower_components/angular-ui-router/release/angular-ui-router.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:42:54 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/main.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:42:54 GMT] "[36mGET[39m [36m/app/bower_components/bootstrap/dist/css/bootstrap.min.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:42:54 GMT] "[36mGET[39m [36m/app/app.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:42:54 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:42:54 GMT] "[36mGET[39m [36m/app/bower_components/angular/angular.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:42:54 GMT] "[36mGET[39m [36m/app/bower_components/angular-resource/angular-resource.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:42:54 GMT] "[36mGET[39m [36m/app/bower_components/lodash/dist/lodash.compat.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:42:54 GMT] "[36mGET[39m [36m/app/common/lodash-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:42:54 GMT] "[36mGET[39m [36m/app/common/resource-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:42:54 GMT] "[36mGET[39m [36m/app/common/chart-serie-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:42:54 GMT] "[36mGET[39m [36m/app/app.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:42:54 GMT] "[36mGET[39m [36m/app/bower_components/highcharts-ng/dist/highcharts-ng.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:42:54 GMT] "[36mGET[39m [36m/app/stats/stats-controllers.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:42:54 GMT] "[36mGET[39m [36m/app/stats/partials/sumup.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:42:54 GMT] "[36mGET[39m [36m/app/stats/partials/content.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[31mhttp-server stopped.[39m
+
+> angular-seed@0.0.0 prestart /home/pi/thermospi/www
+> npm install
+
+npm WARN package.json karma-chrome-launcher@0.1.5 No README data
+npm WARN package.json karma-phantomjs-launcher@0.1.4 No README data
+
+> angular-seed@0.0.0 postinstall /home/pi/thermospi/www
+> bower install
+
+
+> angular-seed@0.0.0 start /home/pi/thermospi/www
+> http-server -p 8000 -c-1
+
+[33mStarting up http-server, serving [39m[36m./[39m[33m on port: [39m[36m8000[39m
+Hit CTRL-C to stop the server
+[Tue, 12 Jan 2016 16:48:34 GMT] "[36mGET[39m [36m/app/[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:48:34 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/normalize.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:48:34 GMT] "[36mGET[39m [36m/app/bower_components/angular-ui-router/release/angular-ui-router.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:48:34 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/main.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:48:34 GMT] "[36mGET[39m [36m/app/bower_components/bootstrap/dist/css/bootstrap.min.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:48:34 GMT] "[36mGET[39m [36m/app/app.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:48:35 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:48:35 GMT] "[36mGET[39m [36m/app/bower_components/angular/angular.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:48:35 GMT] "[36mGET[39m [36m/app/bower_components/angular-resource/angular-resource.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:48:35 GMT] "[36mGET[39m [36m/app/bower_components/highcharts-ng/dist/highcharts-ng.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:48:35 GMT] "[36mGET[39m [36m/app/bower_components/lodash/dist/lodash.compat.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:48:35 GMT] "[36mGET[39m [36m/app/common/lodash-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:48:35 GMT] "[36mGET[39m [36m/app/common/resource-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:48:35 GMT] "[36mGET[39m [36m/app/common/chart-serie-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:48:35 GMT] "[36mGET[39m [36m/app/stats/stats-controllers.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:48:35 GMT] "[36mGET[39m [36m/app/app.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:48:35 GMT] "[36mGET[39m [36m/app/stats/partials/sumup.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 16:48:35 GMT] "[36mGET[39m [36m/app/stats/partials/content.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[31mhttp-server stopped.[39m
+
+> angular-seed@0.0.0 prestart /home/pi/thermospi/www
+> npm install
+
+npm WARN package.json karma-chrome-launcher@0.1.5 No README data
+npm WARN package.json karma-phantomjs-launcher@0.1.4 No README data
+
+> angular-seed@0.0.0 postinstall /home/pi/thermospi/www
+> bower install
+
+
+> angular-seed@0.0.0 start /home/pi/thermospi/www
+> http-server -p 8000 -c-1
+
+[33mStarting up http-server, serving [39m[36m./[39m[33m on port: [39m[36m8000[39m
+Hit CTRL-C to stop the server
+[Tue, 12 Jan 2016 17:26:09 GMT] "[36mGET[39m [36m/app/[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:26:10 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/normalize.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:26:10 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/main.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:26:10 GMT] "[36mGET[39m [36m/app/bower_components/bootstrap/dist/css/bootstrap.min.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:26:10 GMT] "[36mGET[39m [36m/app/app.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:26:10 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:26:10 GMT] "[36mGET[39m [36m/app/bower_components/angular/angular.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:26:10 GMT] "[36mGET[39m [36m/app/bower_components/angular-ui-router/release/angular-ui-router.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:26:10 GMT] "[36mGET[39m [36m/app/bower_components/angular-resource/angular-resource.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:26:10 GMT] "[36mGET[39m [36m/app/bower_components/highcharts-ng/dist/highcharts-ng.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:26:10 GMT] "[36mGET[39m [36m/app/bower_components/lodash/dist/lodash.compat.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:26:10 GMT] "[36mGET[39m [36m/app/common/lodash-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:26:10 GMT] "[36mGET[39m [36m/app/common/resource-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:26:10 GMT] "[36mGET[39m [36m/app/common/chart-serie-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:26:10 GMT] "[36mGET[39m [36m/app/stats/stats-controllers.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:26:10 GMT] "[36mGET[39m [36m/app/app.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:26:10 GMT] "[36mGET[39m [36m/app/stats/partials/sumup.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:26:10 GMT] "[36mGET[39m [36m/app/stats/partials/content.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[31mhttp-server stopped.[39m
+
+> angular-seed@0.0.0 prestart /home/pi/thermospi/www
+> npm install
+
+npm WARN package.json karma-chrome-launcher@0.1.5 No README data
+npm WARN package.json karma-phantomjs-launcher@0.1.4 No README data
+
+> angular-seed@0.0.0 postinstall /home/pi/thermospi/www
+> bower install
+
+
+> angular-seed@0.0.0 start /home/pi/thermospi/www
+> http-server -p 8000 -c-1
+
+[33mStarting up http-server, serving [39m[36m./[39m[33m on port: [39m[36m8000[39m
+Hit CTRL-C to stop the server
+[Tue, 12 Jan 2016 17:28:26 GMT] "[36mGET[39m [36m/app/[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:28:27 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/normalize.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:28:27 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/main.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:28:27 GMT] "[36mGET[39m [36m/app/bower_components/bootstrap/dist/css/bootstrap.min.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:28:27 GMT] "[36mGET[39m [36m/app/app.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:28:27 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:28:27 GMT] "[36mGET[39m [36m/app/bower_components/angular/angular.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:28:27 GMT] "[36mGET[39m [36m/app/bower_components/angular-ui-router/release/angular-ui-router.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:28:27 GMT] "[36mGET[39m [36m/app/bower_components/angular-resource/angular-resource.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:28:27 GMT] "[36mGET[39m [36m/app/bower_components/highcharts-ng/dist/highcharts-ng.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:28:27 GMT] "[36mGET[39m [36m/app/bower_components/lodash/dist/lodash.compat.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:28:27 GMT] "[36mGET[39m [36m/app/common/lodash-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:28:27 GMT] "[36mGET[39m [36m/app/common/resource-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:28:27 GMT] "[36mGET[39m [36m/app/common/chart-serie-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:28:27 GMT] "[36mGET[39m [36m/app/stats/stats-controllers.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:28:27 GMT] "[36mGET[39m [36m/app/app.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:28:27 GMT] "[36mGET[39m [36m/app/stats/partials/sumup.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:28:27 GMT] "[36mGET[39m [36m/app/stats/partials/content.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[31mhttp-server stopped.[39m
+
+> angular-seed@0.0.0 prestart /home/pi/thermospi/www
+> npm install
+
+npm WARN package.json karma-chrome-launcher@0.1.5 No README data
+npm WARN package.json karma-phantomjs-launcher@0.1.4 No README data
+
+> angular-seed@0.0.0 postinstall /home/pi/thermospi/www
+> bower install
+
+
+> angular-seed@0.0.0 start /home/pi/thermospi/www
+> http-server -p 8000 -c-1
+
+[33mStarting up http-server, serving [39m[36m./[39m[33m on port: [39m[36m8000[39m
+Hit CTRL-C to stop the server
+[Tue, 12 Jan 2016 17:32:50 GMT] "[36mGET[39m [36m/app/[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:32:50 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/normalize.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:32:50 GMT] "[36mGET[39m [36m/app/bower_components/angular-ui-router/release/angular-ui-router.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:32:50 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/css/main.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:32:50 GMT] "[36mGET[39m [36m/app/bower_components/bootstrap/dist/css/bootstrap.min.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:32:50 GMT] "[36mGET[39m [36m/app/app.css[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:32:50 GMT] "[36mGET[39m [36m/app/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:32:50 GMT] "[36mGET[39m [36m/app/bower_components/angular/angular.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:32:50 GMT] "[36mGET[39m [36m/app/bower_components/angular-resource/angular-resource.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:32:50 GMT] "[36mGET[39m [36m/app/bower_components/highcharts-ng/dist/highcharts-ng.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:32:50 GMT] "[36mGET[39m [36m/app/bower_components/lodash/dist/lodash.compat.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:32:50 GMT] "[36mGET[39m [36m/app/common/lodash-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:32:50 GMT] "[36mGET[39m [36m/app/common/resource-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:32:50 GMT] "[36mGET[39m [36m/app/common/chart-serie-services.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:32:51 GMT] "[36mGET[39m [36m/app/app.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:32:51 GMT] "[36mGET[39m [36m/app/stats/stats-controllers.js[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:32:51 GMT] "[36mGET[39m [36m/app/stats/partials/sumup.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
+[Tue, 12 Jan 2016 17:32:51 GMT] "[36mGET[39m [36m/app/stats/partials/content.html[39m" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0"
