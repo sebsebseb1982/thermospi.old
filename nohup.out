@@ -770,3 +770,20 @@ GET /records
 GET /sensors
 GET /setpoints
 GET /status
+Listening to port 3000
+Listening to port 3000
+Listening to port 3000
+Listening to port 3000
+GET /records
+GET /sensors
+GET /setpoints
+GET /status
+GET /records/avg/inside
+GET /records/avg/outside
+Listening to port 3000
+GET /records
+GET /sensors
+GET /records/avg/inside
+GET /records/avg/outside
+GET /setpoints
+GET /status
