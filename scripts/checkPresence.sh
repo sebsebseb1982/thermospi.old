@@ -5,7 +5,7 @@ source ~/thermospi/scripts/setVars.sh
 ~/thermospi/scripts/toctoc.sh $1 $2
 PRESENCE=$?
 
- echo "Presence dans la maison -> "$PRESENCE
+echo "Presence dans la maison -> "$PRESENCE
 
 # Si la detection de presence s'est correctement passee
 if [[ $PRESENCE == 0 || $PRESENCE == 1 ]]

@@ -646,3 +646,40 @@ GET /sensors
 GET /status
 GET /setpoints
 Listening to port 3000
+Listening to port 3000
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+Listening to port 3000
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+Listening to port 3000
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+Listening to port 3000
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+Listening to port 3000
+GET /records
+GET /sensors
+GET /status
+GET /setpoints
+GET /records
+GET /sensors
+GET /status
+GET /setpoints

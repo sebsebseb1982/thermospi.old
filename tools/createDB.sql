@@ -15,9 +15,9 @@ CREATE TABLE sensors (
    INDEX(id)
 );
 
-INSERT INTO sensors (label, path) VALUES ('Ext�rieur',       '/sys/bus/w1/devices/28-000004549bbe/w1_slave');
+INSERT INTO sensors (label, path) VALUES ('Exterieur',       '/sys/bus/w1/devices/28-000004549bbe/w1_slave');
 INSERT INTO sensors (label, path) VALUES ('Etage',           '/sys/bus/w1/devices/28-00000454650f/w1_slave');
-INSERT INTO sensors (label, path) VALUES ('Rez-de-chauss�e', '/sys/bus/w1/devices/28-000004540849/w1_slave');
+INSERT INTO sensors (label, path) VALUES ('Rez-de-chaussee', '/sys/bus/w1/devices/28-000004540849/w1_slave');
 
 -- ===============================================
 -- Enregistrements de temperatures
@@ -43,11 +43,8 @@ CREATE TABLE setpoints (
    PRIMARY KEY (id)
 );
 
--- Par defaut on met une consigne a 19�C
-INSERT INTO setpoints (date, value) VALUES (NOW(), 19);
-
 -- ===============================================
--- Consignes de chauffage réelles avec les arrets absence et forçages
+-- Consignes reelle de chauffage
 -- ===============================================
 DROP TABLE IF EXISTS realsetpoints;
 CREATE TABLE realsetpoints (
@@ -57,8 +54,9 @@ CREATE TABLE realsetpoints (
    PRIMARY KEY (id)
 );
 
--- Par defaut on met une consigne a 19�C
+-- Par defaut on met une consigne a 19C
 INSERT INTO setpoints (date, value) VALUES (NOW(), 19);
+INSERT INTO realsetpoints (date, value) VALUES (NOW(), 19);
 
 -- ===============================================
 -- Etat du thermostat
@@ -72,21 +70,25 @@ CREATE TABLE status (
    PRIMARY KEY (id)
 );
 
--- Par d�faut le thermostat est en mode AUTO (status=null)
+
+-- ===============================================
+-- Etat reel du thermostat
+-- ===============================================
+DROP TABLE IF EXISTS realstatus;
+CREATE TABLE realstatus (
+   id INT NOT NULL AUTO_INCREMENT,
+   date DATETIME NOT NULL,
+   status BOOLEAN,
+   PRIMARY KEY (id)
+);
+
+-- Par defaut le thermostat est en mode AUTO (status=null)
 INSERT INTO temperatures.`status` (date, status, priority) VALUES (NOW(), null, 3);
--- Par d�faut on considere que quelqu'un est pr�sent dans la maison
+-- Par defaut on considere que quelqu'un est present dans la maison
 INSERT INTO temperatures.`status` (date, status, priority) VALUES (NOW(), TRUE, 2);
--- Par d�faut le chauffage est �teint
+-- Par defaut le chauffage est eteint
 INSERT INTO temperatures.`status` (date, status, priority) VALUES (NOW(), FALSE, 1);
-/*
-INSERT INTO temperatures.`status` (date, status, priority) VALUES (STR_TO_DATE( '17/07/2013 12:41:00', '%d/%m/%Y %H:%i:%s'), FALSE, 1);
-INSERT INTO temperatures.`status` (date, status, priority) VALUES (STR_TO_DATE( '17/07/2013 12:42:00', '%d/%m/%Y %H:%i:%s'), TRUE, 1);
-INSERT INTO temperatures.`status` (date, status, priority) VALUES (STR_TO_DATE( '17/07/2013 12:43:00', '%d/%m/%Y %H:%i:%s'), FALSE, 1);
-INSERT INTO temperatures.`status` (date, status, priority) VALUES (STR_TO_DATE( '17/07/2013 12:44:00', '%d/%m/%Y %H:%i:%s'), TRUE, 1);
-INSERT INTO temperatures.`status` (date, status, priority) VALUES (STR_TO_DATE( '17/07/2013 12:45:00', '%d/%m/%Y %H:%i:%s'), FALSE, 2);
-INSERT INTO temperatures.`status` (date, status, priority) VALUES (STR_TO_DATE( '17/07/2013 12:46:00', '%d/%m/%Y %H:%i:%s'), TRUE, 1);
-INSERT INTO temperatures.`status` (date, status, priority) VALUES (STR_TO_DATE( '17/07/2013 12:46:30', '%d/%m/%Y %H:%i:%s'), TRUE, 2);
-INSERT INTO temperatures.`status` (date, status, priority) VALUES (STR_TO_DATE( '17/07/2013 12:47:00', '%d/%m/%Y %H:%i:%s'), FALSE, 1);
-*/
+
+INSERT INTO temperatures.`realstatus` (date, status, priority) VALUES (NOW(), TRUE);
 
 SET FOREIGN_KEY_CHECKS=1;
