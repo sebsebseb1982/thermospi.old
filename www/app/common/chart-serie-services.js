@@ -115,7 +115,8 @@ angular
                                 },
                                 verticalAlign: 'middle',
                                 rotation: -90
-                            }
+                            },
+                            zIndex:2
                         }
                     };
 
