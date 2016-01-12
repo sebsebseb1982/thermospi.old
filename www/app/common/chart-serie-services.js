@@ -116,7 +116,7 @@ angular
                                 verticalAlign: 'middle',
                                 rotation: -90
                             },
-                            zIndex: 2
+                            zIndex: 0
                         }
                     };
 
@@ -180,7 +180,7 @@ angular
                         verticalAlign: 'middle',
                         rotation: -90
                     },
-                    zIndex: 0
+                    zIndex: 2
                 });
 
                 return plotLines;
