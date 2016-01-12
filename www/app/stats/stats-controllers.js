@@ -12,8 +12,8 @@ angular
         'contentStatsCtrl',
         [
             '$scope',
-            'chartSerieServices',
-            function ($scope, chartSerieServices) {
+            'temperatureSeries',
+            function ($scope, temperatureSeries) {
                 $scope.termperaturesConfig = {
                     options: {
                         chart: {
@@ -28,7 +28,7 @@ angular
                     },
 
                     //Series object (optional) - a list of series using normal highcharts series options.
-                    series: chartSerieServices.getTemperatureSeries(),
+                    series: temperatureSeries(),
                     //Title configuration (optional)
                     title: {
                         text: 'Températures'
@@ -39,7 +39,7 @@ angular
                     //properties currentMin and currentMax provied 2-way binding to the chart's maximimum and minimum
                     xAxis: {
                         type: 'datetime',
-                        plotBands: chartSerieServices.getStatusSeries()
+                        plotBands: statusSeries()
                     },
                     //Whether to use HighStocks instead of HighCharts (optional). Defaults to false.
                     useHighStocks: false,

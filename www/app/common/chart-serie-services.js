@@ -4,7 +4,7 @@ angular
         ['resourceServices']
     )
     .factory(
-        'getTemperatureSeries',
+        'temperatureSeries',
         [
             'temperatureResources',
             '$q',
@@ -64,7 +64,7 @@ angular
         ]
     )
     .factory(
-        'getStatusSeries',
+        'statusSeries',
         [
             'temperatureResources',
             '_',
