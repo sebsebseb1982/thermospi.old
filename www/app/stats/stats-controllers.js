@@ -1,136 +1,57 @@
 angular
     .module('statsControllers', ['resourceServices', 'highcharts-ng', 'lodash'])
     .controller(
-	    'sumupStatsCtrl',
-	    [
-	        '$scope',
-	        function ($scope) {
-	        }
-	    ]
-	)
-	.controller(
-		'contentStatsCtrl',
-		[
-			 '$scope',
-			 'temperatureResources',
-			 '$q',
-			 '_',
-			 function ($scope, temperatureResources, $q, _) {
-				 
-				 
-				$q.all([
-					temperatureResources.records.get().$promise,
-					temperatureResources.sensors.get().$promise,
-					temperatureResources.status.get().$promise,
-					temperatureResources.setpoints.get().$promise
-				]).then(function(data) {
-					var records = data[0];
-					var sensors = data[1];
-					var status = data[2];
-					var setpoints = data[3];
-					var finalSetPoint = {
-						'id' : setpoints[setpoints.length - 1].id,
-						'value' : setpoints[setpoints.length - 1].value,
-						'date' : new Date()
-					};
-					setpoints.push(finalSetPoint);
+        'sumupStatsCtrl',
+        [
+            '$scope',
+            function ($scope) {
+            }
+        ]
+    )
+    .controller(
+        'contentStatsCtrl',
+        [
+            '$scope',
+            'chartSerieServices',
+            function ($scope, chartSerieServices) {
+                $scope.termperaturesConfig = {
+                    options: {
+                        chart: {
+                            type: 'spline'
+                        },
+                        tooltip: {
+                            style: {
+                                padding: 10,
+                                fontWeight: 'bold'
+                            }
+                        }
+                    },
 
-					var series = [];
-					
-					_.forEach(
-						sensors,
-						function(sensor) {
-							
-							var newSerie = {
-								'name' : sensor.label,
-								'data' : _.map(_.filter(records, {sensorId:sensor.id}),function(record) {return [Date.parse(record.date), record.value];})
-							};
-							
-							series.push(newSerie);
-						}
-					);
-					
-					var setpointsSerie = {
-						'name' : 'Consigne',
-						'step' : true,
-						'color' :'#FF4040',
-						'type' : 'line',
-						'data' : _.map(setpoints,function(setpoint) {return [Date.parse(setpoint.date), setpoint.value];})
-					};
-
-					var getAPlotBand = function(from, to) {
-						return {
-							from: from,
-							to: to,
-							color: 'rgba(255, 0, 0, 0.1)',
-							label: {
-								text: Math.floor((Math.abs(to-from)/1000)/60) + ' min.',
-								style: {
-									color: '#606060'
-								},
-								verticalAlign: 'middle',
-								rotation: -90
-							}
-						}
-					};
-
-					var statusBands = [];
-					var from;
-					_.forEach(status, function(status){
-						if(!from && status.status == 1) {
-							from = Date.parse(status.date);
-						} else if (from && status.status == 0) {
-							var to = Date.parse(status.date);
-							statusBands.push(getAPlotBand(from, to));
-							from = undefined;
-						}
-					});
-
-					if(from) {
-						statusBands.push(getAPlotBand(from, new Date()));
-					}
-
-					series.push(setpointsSerie);
-
-					$scope.termperaturesConfig = {
-							options: {
-								chart: {
-									type: 'spline'
-								},
-								tooltip: {
-									style: {
-										padding: 10,
-										fontWeight: 'bold'
-									}
-								}
-							},
-							
-							//Series object (optional) - a list of series using normal highcharts series options.
-							series: series,
-							//Title configuration (optional)
-							title: {
-								text: 'Températures'
-							},
-							//Boolean to control showng loading status on chart (optional)
-							loading: false,
-							//Configuration for the xAxis (optional). Currently only one x axis can be dynamically controlled.
-							//properties currentMin and currentMax provied 2-way binding to the chart's maximimum and minimum
-							xAxis: {
-								type: 'datetime',
-								plotBands: statusBands
-							},
-							//Whether to use HighStocks instead of HighCharts (optional). Defaults to false.
-							useHighStocks: false,
-							//size (optional) if left out the chart will default to size of the div or something sensible.
-							size: {
-								height: 500
-							},
-							//function (optional)
-							func: function (chart) {
-								//setup some logic for the chart
-							}
-					};
-				});
-			 }
-		]
-	);
+                    //Series object (optional) - a list of series using normal highcharts series options.
+                    series: chartSerieServices.getTemperatureSeries(),
+                    //Title configuration (optional)
+                    title: {
+                        text: 'Températures'
+                    },
+                    //Boolean to control showng loading status on chart (optional)
+                    loading: false,
+                    //Configuration for the xAxis (optional). Currently only one x axis can be dynamically controlled.
+                    //properties currentMin and currentMax provied 2-way binding to the chart's maximimum and minimum
+                    xAxis: {
+                        type: 'datetime',
+                        plotBands: chartSerieServices.getStatusSeries()
+                    },
+                    //Whether to use HighStocks instead of HighCharts (optional). Defaults to false.
+                    useHighStocks: false,
+                    //size (optional) if left out the chart will default to size of the div or something sensible.
+                    size: {
+                        height: 500
+                    },
+                    //function (optional)
+                    func: function (chart) {
+                        //setup some logic for the chart
+                    }
+                };
+            }
+        ]
+    );

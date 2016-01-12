@@ -6,7 +6,7 @@ angular.module(
 	[
 		'ui.router',
 		'statsControllers',
-		'chartServices',
+		'chartSerieServices',
 		'resourceServices'
 	]
 )
