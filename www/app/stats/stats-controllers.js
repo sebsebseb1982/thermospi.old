@@ -13,6 +13,7 @@ angular
         [
             '$scope',
             'temperatureSeries',
+            'statusSeries',
             function ($scope, temperatureSeries) {
                 $scope.termperaturesConfig = {
                     options: {
@@ -28,7 +29,7 @@ angular
                     },
 
                     //Series object (optional) - a list of series using normal highcharts series options.
-                    series: temperatureSeries(),
+                    series: temperatureSeries.get(),
                     //Title configuration (optional)
                     title: {
                         text: 'Températures'
@@ -39,7 +40,7 @@ angular
                     //properties currentMin and currentMax provied 2-way binding to the chart's maximimum and minimum
                     xAxis: {
                         type: 'datetime',
-                        plotBands: statusSeries()
+                        plotBands: statusSeries.get()
                     },
                     //Whether to use HighStocks instead of HighCharts (optional). Defaults to false.
                     useHighStocks: false,
