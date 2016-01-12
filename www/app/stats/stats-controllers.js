@@ -12,7 +12,7 @@ angular
 		'contentStatsCtrl',
 		[
 			 '$scope',
-			 'myResources',
+			 'temperatureResources',
 			 '$q',
 			 '_',
 			 function ($scope, temperatureResources, $q, _) {
