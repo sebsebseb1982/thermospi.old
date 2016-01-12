@@ -62,7 +62,7 @@ var querySQL = function(req, res, sql) {
     });
 };
 
-var daysOfHistory = 2;
+var daysOfHistory = 1;
 
 router
     .route('/records')
