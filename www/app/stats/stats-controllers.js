@@ -15,14 +15,14 @@ angular
 			 'myResources',
 			 '$q',
 			 '_',
-			 function ($scope, myResources, $q, _) {
+			 function ($scope, temperatureResources, $q, _) {
 				 
 				 
 				$q.all([
-					myResources.records.get().$promise,
-					myResources.sensors.get().$promise,
-					myResources.status.get().$promise,
-					myResources.setpoints.get().$promise
+					temperatureResources.records.get().$promise,
+					temperatureResources.sensors.get().$promise,
+					temperatureResources.status.get().$promise,
+					temperatureResources.setpoints.get().$promise
 				]).then(function(data) {
 					var records = data[0];
 					var sensors = data[1];
