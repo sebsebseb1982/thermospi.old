@@ -14,7 +14,7 @@ angular
             '$scope',
             'temperatureSeries',
             'statusSeries',
-            function ($scope, temperatureSeries) {
+            function ($scope, temperatureSeries, statusSeries) {
                 $scope.termperaturesConfig = {
                     options: {
                         chart: {
