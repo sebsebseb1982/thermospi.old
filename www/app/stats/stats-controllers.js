@@ -15,6 +15,9 @@ angular
             'temperatureSeries',
             'statusSeries',
             function ($scope, temperatureSeries, statusSeries) {
+
+                console.log('coucou', temperatureSeries.get());
+
                 $scope.termperaturesConfig = {
                     options: {
                         chart: {

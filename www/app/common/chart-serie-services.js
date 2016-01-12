@@ -3,14 +3,14 @@ angular
         'chartSerieServices',
         ['resourceServices']
     )
-    .service(
+    .factory(
         'temperatureSeries',
         [
             'temperatureResources',
             '$q',
             '_',
             function (temperatureResources, $q, _) {
-                this.get = function(){
+                var get = function(){
                     $q.all([
                         temperatureResources.records.get().$promise,
                         temperatureResources.sensors.get().$promise,
@@ -61,6 +61,10 @@ angular
 
                         return series;
                     });
+                };
+
+                return {
+                    get : get
                 }
             }
         ]
