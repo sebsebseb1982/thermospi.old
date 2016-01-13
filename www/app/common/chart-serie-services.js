@@ -152,18 +152,14 @@ angular
 
                 plotLines.push({
                     color: 'rgba(255, 255, 204, 0.8)',
-                    /*dashStyle: 'longdashdot',
-                    value: Date.parse(sunriseDetails.results.sunset),
-                    width: 2,*/
                     from:Date.parse(sunriseDetails.results.sunrise),
                     to:Date.parse(sunriseDetails.results.sunset),
                     label: {
-                        text: "Jour",
+                        text: Math.round(sunriseDetails.results.day_length/(60*60)) + "h" + Math.round((sunriseDetails.results.day_length%(60*60))/60),
                         style: {
                             color: '#606060'
                         },
-                        verticalAlign: 'middle',
-                        rotation: -90
+                        verticalAlign: 'middle'
                     },
                     zIndex: 0
                 });
