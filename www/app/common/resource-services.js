@@ -35,7 +35,7 @@ angular
                         {
                             get: {
                                 method: 'GET',
-                                isArray: false
+                                isArray: true
                             }
                         }),
                     setpoints: $resource("http://192.168.1.50:3000/api/setpoints", null,
@@ -55,14 +55,14 @@ angular
                         {
                             get: {
                                 method: 'GET',
-                                isArray: false
+                                isArray: true
                             }
                         }),
                     lastOutside: $resource("http://192.168.1.50:3000/api/records/last/outside", null,
                         {
                             get: {
                                 method: 'GET',
-                                isArray: false
+                                isArray: true
                             }
                         }),
                     averageInside: $resource("http://192.168.1.50:3000/api/records/avg/inside", null,

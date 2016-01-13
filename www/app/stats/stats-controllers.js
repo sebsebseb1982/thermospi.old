@@ -8,15 +8,15 @@ angular
             function ($scope, temperatureResources) {
 
                 temperatureResources.lastStatus.get().$promise.then(function (data) {
-                    $scope.lastStatus = data.status == 1;
+                    $scope.lastStatus = data[0].status == 1;
                 });
 
                 temperatureResources.lastInside.get().$promise.then(function (data) {
-                    $scope.lastInside = data.value;
+                    $scope.lastInside = data[0].value;
                 });
 
                 temperatureResources.lastOutside.get().$promise.then(function (data) {
-                    $scope.lastOutside = data.value;
+                    $scope.lastOutside = data[0].value;
                 });
 
             }
