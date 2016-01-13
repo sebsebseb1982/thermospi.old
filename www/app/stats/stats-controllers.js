@@ -22,12 +22,24 @@ angular
             'sunriseSerie',
             function (_, $scope, $q, temperatureResources, temperatureSeries, averageTemperatureSeries, statusSeries, sunriseResources, sunriseSerie) {
 
+                var formatDate = function(dateToFormat) {
+                    var month = format(dateToFormat .getMonth() + 1);
+                    var day = format(dateToFormat .getDate());
+                    var year = format(dateToFormat .getFullYear());
+
+                    return year + "-" + month + "-" + day;
+                }
+
+                var today = new Date();
+
                 $q.all([
                     temperatureResources.records.get().$promise,
                     temperatureResources.sensors.get().$promise,
                     temperatureResources.setpoints.get().$promise,
                     temperatureResources.status.get().$promise,
-                    sunriseResources.sunrise.get().$promise
+                    sunriseResources.sunrise.get({date: formatDate(new Date(new Date().setDate(new Date().getDate()-1)))}).$promise,
+                    sunriseResources.sunrise.get().$promise,
+                    sunriseResources.sunrise.get({date: formatDate(new Date(new Date().setDate(new Date().getDate()+1)))}).$promise,
                 ]).then(function (data) {
 
                     $scope.termperaturesConfig = {
@@ -50,7 +62,7 @@ angular
                         loading: false,
                         xAxis: {
                             type: 'datetime',
-                            plotBands: _.union(statusSeries.get(data[3]), sunriseSerie.get(data[4]))
+                            plotBands: _.union(statusSeries.get(data[3]), sunriseSerie.get(data[4]), sunriseSerie.get(data[5]), sunriseSerie.get(data[6]))
                         },
                         useHighStocks: false,
                         size: {

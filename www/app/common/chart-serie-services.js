@@ -150,21 +150,6 @@ angular
 
                 var plotLines = [];
 
-                /*plotLines.push({
-                    color: 'red',
-                    dashStyle: 'longdashdot',
-                    value: Date.parse(sunriseDetails.results.sunrise),
-                    width: 2,
-                    label: {
-                        text: "Aurore",
-                        style: {
-                            color: '#606060'
-                        },
-                        verticalAlign: 'middle',
-                        rotation: -90
-                    }
-                });*/
-
                 plotLines.push({
                     color: 'rgba(255, 255, 204, 0.8)',
                     /*dashStyle: 'longdashdot',
