@@ -71,15 +71,9 @@ router
     });
 
 router
-    .route('/records/last/inside')
+    .route('/records/last')
     .get(function(req,res){
-        querySQL(req,res,'SELECT AVG(`value`) AS value FROM records WHERE sensorId=2 OR sensorId=3 ORDER BY date DESC LIMIT 2');
-    });
-
-router
-    .route('/records/last/outside')
-    .get(function(req,res){
-        querySQL(req,res,'SELECT value FROM records WHERE sensorId=1 ORDER BY date DESC LIMIT 1');
+        querySQL(req,res,'SELECT last.sensorId, AVG(last.value) AS value FROM (SELECT * FROM records WHERE date >= NOW() - interval 15 minute)last GROUP BY sensorId');
     });
 
 router

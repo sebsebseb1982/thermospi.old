@@ -4,21 +4,27 @@ angular
         'sumupStatsCtrl',
         [
             '$scope',
+            '_',
             'temperatureResources',
-            function ($scope, temperatureResources) {
+            function ($scope, _, temperatureResources) {
 
                 temperatureResources.lastStatus.get().$promise.then(function (data) {
                     $scope.lastStatus = data[0].status == 1;
                 });
 
-                temperatureResources.lastInside.get().$promise.then(function (data) {
-                    $scope.lastInside = data[0].value;
-                });
 
-                temperatureResources.lastOutside.get().$promise.then(function (data) {
-                    $scope.lastOutside = data[0].value;
-                });
+                var average = function(values) {
+                    var total = 0;
+                    for(var i = 0; i < values.length; i++) {
+                        total += values[i];
+                    }
+                    return total / values.length
+                };
 
+                temperatureResources.lastRecords.get().$promise.then(function (data) {
+                    $scope.lastInside = average(_.pluck(_.filter(data, function(record) { return record.sensorId == 2 || record.sensorId == 3; }), 'value'));
+                    $scope.lastOutside = _.find(data, function(record) { return record.sensorId == 1; }).value;
+                });
             }
         ]
     )

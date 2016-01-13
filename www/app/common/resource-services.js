@@ -17,6 +17,13 @@ angular
                                 isArray: true
                             }
                         }),
+                    lastRecords: $resource("http://192.168.1.50:3000/api/records/last", null,
+                        {
+                            get: {
+                                method: 'GET',
+                                isArray: true
+                            }
+                        }),
                     sensors: $resource("http://192.168.1.50:3000/api/sensors", null,
                         {
                             get: {
@@ -46,20 +53,6 @@ angular
                                     action: "rafraichissement"
                                 }
                             },
-                            get: {
-                                method: 'GET',
-                                isArray: true
-                            }
-                        }),
-                    lastInside: $resource("http://192.168.1.50:3000/api/records/last/inside", null,
-                        {
-                            get: {
-                                method: 'GET',
-                                isArray: true
-                            }
-                        }),
-                    lastOutside: $resource("http://192.168.1.50:3000/api/records/last/outside", null,
-                        {
                             get: {
                                 method: 'GET',
                                 isArray: true
