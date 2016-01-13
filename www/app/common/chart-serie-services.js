@@ -127,18 +127,13 @@ angular
                             from = Date.parse(status.date);
                         } else if (from && status.status == 0) {
                             var to = Date.parse(status.date);
-                            console.log("Afrom", from);
-                            console.log("Ato", to);
                             statusBands.push(getAPlotBand(from, to));
                             from = undefined;
                         }
                     });
 
                     if (from) {
-                        var MS_PER_MINUTE = 60000;
-                        var virtualTo = new Date(new Date() - 1 * MS_PER_MINUTE).getTime();
-                        console.log("Bfrom", from);
-                        console.log("BvirtualTo", virtualTo);
+                        var virtualTo = new Date().getTime();
                         statusBands.push(getAPlotBand(from, virtualTo));
                     }
 
