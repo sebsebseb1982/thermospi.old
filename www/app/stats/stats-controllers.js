@@ -23,9 +23,9 @@ angular
             function (_, $scope, $q, temperatureResources, temperatureSeries, averageTemperatureSeries, statusSeries, sunriseResources, sunriseSerie) {
 
                 var formatDate = function(dateToFormat) {
-                    var month = format(dateToFormat .getMonth() + 1);
-                    var day = format(dateToFormat .getDate());
-                    var year = format(dateToFormat .getFullYear());
+                    var month = dateToFormat.getMonth() + 1;
+                    var day = dateToFormat.getDate();
+                    var year = dateToFormat .getFullYear();
 
                     return year + "-" + month + "-" + day;
                 }
