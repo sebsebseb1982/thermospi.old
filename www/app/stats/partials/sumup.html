@@ -1,4 +1,4 @@
 <div class="container">
   <h1>Chauffage {{lastStatus ? 'allumé' : 'éteint'}} !</h1>
-  <p>Il fait {{lastInside}}°C à l'intérieur et {{lastOutside}}°C à l'extérieur.</p>
+  <p>Il fait {{lastInside | number:1}}°C à l'intérieur et {{lastOutside | number:1}}°C à l'extérieur.</p>
 </div>
