@@ -155,7 +155,7 @@ angular
                     from:Date.parse(sunriseDetails.results.sunrise),
                     to:Date.parse(sunriseDetails.results.sunset),
                     label: {
-                        text: Math.round(sunriseDetails.results.day_length/(60*60)) + "h" + _.padStart(Math.round((sunriseDetails.results.day_length%(60*60))/60), 2, "0"),
+                        text: Math.round(sunriseDetails.results.day_length/(60*60)) + "h" + _.padLeft(Math.round((sunriseDetails.results.day_length%(60*60))/60), 2, "0"),
                         style: {
                             color: '#606060'
                         },
