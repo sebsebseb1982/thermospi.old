@@ -134,7 +134,7 @@ angular
 
                     if (from) {
                         var MS_PER_MINUTE = 60000;
-                        var virtualTo = new Date(new Date() - 1 * MS_PER_MINUTE);
+                        var virtualTo = new Date(new Date() - 5 * MS_PER_MINUTE);
                         statusBands.push(getAPlotBand(from, virtualTo));
                     }
 
