@@ -31,6 +31,13 @@ angular
                                 isArray: true
                             }
                         }),
+                    lastStatus: $resource("http://192.168.1.50:3000/api/status/last", null,
+                        {
+                            get: {
+                                method: 'GET',
+                                isArray: false
+                            }
+                        }),
                     setpoints: $resource("http://192.168.1.50:3000/api/setpoints", null,
                         {
                             post: {
@@ -42,6 +49,20 @@ angular
                             get: {
                                 method: 'GET',
                                 isArray: true
+                            }
+                        }),
+                    lastInside: $resource("http://192.168.1.50:3000/api/records/last/inside", null,
+                        {
+                            get: {
+                                method: 'GET',
+                                isArray: false
+                            }
+                        }),
+                    lastOutside: $resource("http://192.168.1.50:3000/api/records/last/outside", null,
+                        {
+                            get: {
+                                method: 'GET',
+                                isArray: false
                             }
                         }),
                     averageInside: $resource("http://192.168.1.50:3000/api/records/avg/inside", null,

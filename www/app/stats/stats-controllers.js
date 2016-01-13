@@ -4,7 +4,21 @@ angular
         'sumupStatsCtrl',
         [
             '$scope',
-            function ($scope) {
+            'temperatureResources',
+            function ($scope, temperatureResources) {
+
+                temperatureResources.lastStatus.get().$promise.then(function (data) {
+                    $scope.lastStatus = data.status == 1;
+                });
+
+                temperatureResources.lastInside.get().$promise.then(function (data) {
+                    $scope.lastInside = data.value;
+                });
+
+                temperatureResources.lastOutside.get().$promise.then(function (data) {
+                    $scope.lastOutside = data.value;
+                });
+
             }
         ]
     )

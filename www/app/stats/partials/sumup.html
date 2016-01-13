@@ -1,6 +1,4 @@
 <div class="container">
-  <h1>Hello, world!</h1>
-  {{test}}
-  <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+  <h1>Chauffage {{lastStatus ? 'allumé' : 'éteint'}} !</h1>
+  <p>Il fait {{lastInside}}°C à l'intérieur et {{lastOutside}}°C à l'extérieur.</p>
 </div>

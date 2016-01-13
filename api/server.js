@@ -71,6 +71,18 @@ router
     });
 
 router
+    .route('/records/last/inside')
+    .get(function(req,res){
+        querySQL(req,res,'SELECT AVG(`value`) AS value FROM records WHERE sensorId=2 OR sensorId=3 ORDER BY date DESC LIMIT 2');
+    });
+
+router
+    .route('/records/last/outside')
+    .get(function(req,res){
+        querySQL(req,res,'SELECT value FROM records WHERE sensorId=1 ORDER BY date DESC LIMIT 1');
+    });
+
+router
     .route('/records/avg/inside')
     .get(function(req,res){
         querySQL(req,res,'SELECT date, AVG(`value`) AS avg FROM records WHERE sensorId=2 OR sensorId=3 GROUP BY YEAR(`date`), MONTH(`date`) HAVING COUNT(`date`)');
@@ -86,6 +98,12 @@ router
     .route('/status')
     .get(function(req,res){
         querySQL(req,res,'SELECT * FROM realstatus WHERE date >= ( CURDATE() - INTERVAL ' + daysOfHistory + ' DAY )');
+    });
+
+router
+    .route('/status/last')
+    .get(function(req,res){
+        querySQL(req,res,'SELECT * FROM realstatus ORDER BY date DESC LIMIT 1');
     });
 
 router
