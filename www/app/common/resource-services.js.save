@@ -8,18 +8,9 @@ angular
         [
             '$resource',
             function ($resource) {
-
-                var apiPath = "http://82.244.81.177:53254/api";
-
+                var apiPath = "http://82.244.81.177:53254/api"
                 return {
                     records: $resource(apiPath + "/records", null,
-                        {
-                            get: {
-                                method: 'GET',
-                                isArray: true
-                            }
-                        }),
-                    lastRecords: $resource(apiPath + "/records/last", null,
                         {
                             get: {
                                 method: 'GET',
@@ -34,13 +25,6 @@ angular
                             }
                         }),
                     status: $resource(apiPath + "/status", null,
-                        {
-                            get: {
-                                method: 'GET',
-                                isArray: true
-                            }
-                        }),
-                    lastStatus: $resource(apiPath + "/status/last", null,
                         {
                             get: {
                                 method: 'GET',
