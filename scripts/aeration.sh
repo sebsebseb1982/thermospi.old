@@ -24,7 +24,9 @@ then
       TEMPERATURE_EXTERIEURE=$(mysql -u $DB_USER -p$DB_PASSWORD -se 'SELECT value FROM records WHERE date > (NOW() - INTERVAL '$TEMPERATURE_RECORD_FREQUENCY' minute) AND sensorId = 1' $DB_NAME)
     
       echo "Température extérieure : "$TEMPERATURE_EXTERIEURE"°C"
-      MESSAGE="Interieur : $TEMPERATURE_INTERIEURE°C - Exterieur : $TEMPERATURE_EXTERIEURE°C"
+      MESSAGE="Interieur : "$TEMPERATURE_INTERIEURE"°C - Exterieur : "$TEMPERATURE_EXTERIEURE"°C"
+
+      echo $MESSAGE
 
       # Si il fait moins chaud dehors qu'à l'intérieur
       if [ `bc <<< $TEMPERATURE_INTERIEURE' > '$TEMPERATURE_EXTERIEURE` = 1 ]
